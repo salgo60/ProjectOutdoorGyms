@@ -1,0 +1,13 @@
+,type,geometry.type,geometry.coordinates,properties.ID,properties.TITEL,properties.BESKRIVNING,properties.LINK,properties.PUBLICERAD
+0,Feature,Point,"[15.257027349323, 59.2771491218136]",1423,Alnängarnas utegym,"Vid Svartån, mellan Alnängsbadet och Osetbron vid Naturens hus, finns ett utegym där du kan träna utomhus och när du vill.",http://www.orebro.se/13503.html,Ja
+1,Feature,Point,"[15.1992074345839, 59.2897499398519]",1601,Utegym Baronbackarma,Utegym,www.orebro.se/utegym,Ja
+2,Feature,Point,"[15.2271728435398, 59.2867914577759]",1602,Utegym Bergkällebacken,Utegym,www.orebro.se/utegym,Ja
+3,Feature,Point,"[15.244370603546, 59.2340711282985]",1603,Utegym Saxons park,Utegym,www.orebro.se/utegym,Ja
+4,Feature,Point,"[15.2319917959567, 59.2737936201181]",1604,Utegym Storaholmen,Utegym,www.orebro.se/utegym,Ja
+5,Feature,Point,"[15.1944072095474, 59.2698288432734]",1605,Utegym Ånäsparken,Utegym,www.orebro.se/utegym,Ja
+6,Feature,Point,"[15.2153126214241, 59.255202513509]",1621,Utegym Grönpepparparken,Utegym,www.orebro.se/utegym,Ja
+7,Feature,Point,"[15.2394460296104, 59.2876737883058]",2202,Utegym Venaspåret,Utegym,https://www.orebro.se/utegym,Ja
+8,Feature,Point,"[15.1451998719678, 59.2765126961365]",2221,Utegym Karlslund,Utegym,https://www.orebro.se/utegym,Ja
+9,Feature,Point,"[15.2519367427569, 59.2448154147077]",2241,Utegym Markaspåret,Utegym,https://www.orebro.se/utegym,Ja
+10,Feature,Point,"[15.2459732483922, 59.319651401352]",2261,Utegym Lillåspåret,Utegym,https://www.orebro.se/utegym,Ja
+11,Feature,Point,"[15.1581257739779, 59.2456473262426]",2301,Sanatorie Utegym,Utegym,www.orebro.se/utegym,Ja
