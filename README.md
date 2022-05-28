@@ -7,7 +7,9 @@ A week long activity --> [2954 Swedish bathing waters](https://www.wikidata.org/
 <img width="1274" alt="image" src="https://user-images.githubusercontent.com/14206509/166695474-058ce176-74f1-4468-81a7-75cf54609af4.png">
 
 
-**Mission completed:** its easy if skilled people are part as [EU EEA who answered directly](https://github.com/salgo60/EuropeanBathingWater/blob/main/Email/Gmail%20-%20Eionet%20bathingWaterIdentifier%20_-_%20Wikidata_Wikipedia.pdf) same question to Swedish goverment took 3 weeks to get a non useful answer....
+**Mission completed:** its easy if skilled people are part 
+* 50 minutes response time with excellent answer -  [EU EEA who answered directly](https://github.com/salgo60/EuropeanBathingWater/blob/main/Email/Gmail%20-%20Eionet%20bathingWaterIdentifier%20_-_%20Wikidata_Wikipedia.pdf) 
+* same question to Swedish goverment people took 3 weeks to get a non useful answer....
 
 see also [Wikidata:WikiProject Outdoor Gyms](https://www.wikidata.org/wiki/Wikidata:WikiProject_Outdoor_Gyms)
 
