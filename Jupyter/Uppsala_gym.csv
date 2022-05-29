@@ -1,0 +1,26 @@
+,type,id,geometry.type,geometry.coordinates,properties.OBJECTID,properties.NAMN,properties.URL
+0,Feature,1,Point,"[17.449862603314187, 59.85476658590492]",1,Vänge utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-vange/
+1,Feature,2,Point,"[17.649557975427918, 59.84815001675312]",2,Tullgarnsparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-tullgarnsparken/
+2,Feature,3,Point,"[17.643903013495674, 59.87147097547421]",3,Kapellgärdesparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-kapellgardesparken/
+3,Feature,5,Point,"[17.60320797779697, 59.877183034143336]",5,Librobäcks utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-libroback/
+4,Feature,6,Point,"[17.68877704851322, 59.82929899537852]",6,Lilla Djurgårdens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-lilla-djurgarden/
+5,Feature,7,Point,"[17.576802028682337, 59.95624002904769]",7,Lövstalöts utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-lovstalot/
+6,Feature,8,Point,"[17.658390053790125, 59.792837990770686]",8,Sunnerstaåsens motorikbana,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/sunnerstaasens-motorikbana/
+7,Feature,9,Point,"[17.614767527987002, 59.825812154429705]",9,Murkelparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-murkelparken/
+8,Feature,10,Point,"[17.625714926308152, 59.88272797343465]",10,Röbo utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-robo/
+9,Feature,11,Point,"[17.69746213900043, 59.956441099921115]",11,"Rörparkens utegym, Storvreta",https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-rorparken-storvreta/
+10,Feature,12,Point,"[17.628665018728867, 59.839571985708666]",12,Stadsskogens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-stadsskogen/
+11,Feature,13,Point,"[17.65973493931813, 59.796487986989305]",13,Sunnerstaåsens stockgym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/sunnerstaasens-stockgym/
+12,Feature,14,Point,"[17.70539915272777, 59.811340549198185]",14,Sävja IP utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-vid-savja-ip/
+13,Feature,15,Point,"[17.66629996288829, 59.860571970749724]",15,Vallby dunge utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-vallby-dunge/
+14,Feature,16,Point,"[17.62607871514785, 59.82648568148807]",16,Skivlingparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-skivlingparken/
+15,Feature,17,Point,"[17.608994714014, 59.82434882632946]",17,Svampvallens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-vid-svampvallen/
+16,Feature,18,Point,"[17.557521071373976, 59.85313750715119]",18,Månstensparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-manstensparken/
+17,Feature,19,Point,"[17.640443355455925, 59.8625887158654]",19,Österplans utegym,
+18,Feature,21,Point,"[17.68753202119024, 59.868184162535975]",21,Årstaparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-arsta/
+19,Feature,22,Point,"[17.617793975484894, 59.84154452067196]",22,Norbyvretens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-norbyvreten/
+20,Feature,23,Point,"[17.606701956441636, 59.85962602330928]",23,Stabby utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-stabby/
+21,Feature,24,Point,"[17.644750729912726, 59.81438340892722]",24,Genetiska trädgårdens utegym,
+22,Feature,25,Point,"[17.553848923807724, 60.02913377704404]",25,Björklinge utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-bjorklinge/
+23,Feature,26,Point,"[17.603941923142184, 59.86636512253351]",26,Gjuteriparkens utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-gjuteriparken/
+24,Feature,27,Point,"[17.563299082225313, 59.77039616507314]",27,Hammarskogs utegym,https://www.uppsala.se/kultur-och-fritid/aktiviteter-motion-och-idrott/motion-och-bad/utegym/utegymmet-i-hammarskog/
