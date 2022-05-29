@@ -1,0 +1,13 @@
+,type,geometry.type,geometry.coordinates,properties.NAMN
+0,Feature,Point,"[17.1124, 60.6727]",Stora Vall
+1,Feature,Point,"[17.0948, 60.6782]",Lexevägen
+2,Feature,Point,"[17.2343, 60.6731]",Rostadsvägen
+3,Feature,Point,"[16.8966, 60.6151]",Pilparken
+4,Feature,Point,"[17.1135, 60.6744]",Stadsbadet
+5,Feature,Point,"[17.1684, 60.6794]",Toppsockergränd
+6,Feature,Point,"[17.0991, 60.687]",Pingeltorp lekplats
+7,Feature,Point,"[17.1587, 60.6429]",Skogslekplatsen Hemlingby
+8,Feature,Point,"[16.8866, 60.6186, 0]",Forsbacka Utegym
+9,Feature,Point,"[17.1707, 60.6494, 0]",Hemlingby Utegym
+10,Feature,Point,"[17.134, 60.6941, 0]",Gavlehov Utegym
+11,Feature,Point,"[16.9886, 60.4135, 0]",Hedesunda Utegym
