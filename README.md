@@ -17,3 +17,4 @@ see also [Wikidata:WikiProject Outdoor Gyms](https://www.wikidata.org/wiki/Wikid
   * Outdoor gyms missing [Open Street Map connection](https://github.com/salgo60/ProjectOutdoorGyms/blob/main/Jupyter/WD%20-%20OSM%20Outdoor%20gym%20missing.csv) 
 * [issues](https://github.com/salgo60/ProjectOutdoorGyms/issues?q=is%3Aissue+)
 * [Backlog](https://github.com/salgo60/ProjectOutdoorGyms/projects/1)
+* same for [Swedish bathingwaters](https://github.com/salgo60/Svenskabadplatser)
