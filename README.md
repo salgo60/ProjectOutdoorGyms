@@ -1,7 +1,7 @@
 # ProjectOutdoorGyms
 
 A week long activity --> [2954 Swedish bathing waters](https://www.wikidata.org/wiki/Wikidata:WikiProject_Sweden/Svenska_badplatser) and [1300 swedish outdoor gym](https://www.wikidata.org/wiki/Wikidata:WikiProject_Outdoor_Gyms) as Open data in Wikidata
-
+* [senaste uppdateringen](https://github.com/salgo60/ProjectOutdoorGyms/issues?q=is%3Aissue+sort%3Aupdated-desc)
 <img width="1273" alt="image" src="https://user-images.githubusercontent.com/14206509/166695227-1732a30e-7a90-460c-92d4-dec818f8994f.png">
 
 <img width="1274" alt="image" src="https://user-images.githubusercontent.com/14206509/166695474-058ce176-74f1-4468-81a7-75cf54609af4.png">
