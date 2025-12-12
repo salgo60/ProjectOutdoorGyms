@@ -1,0 +1,2260 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Utegymrapport with updated WD objects 2025_12_12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #1a0dab;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .map-row {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+        .map-box {
+            width: 500px;   /* karta + marginal */
+            height: auto;
+            margin-right: 20px;
+     }
+
+}
+
+    </style>
+</head>
+<body>
+
+<h1>Utegymrapport with updated WD objects</h1>
+<p><strong>Issue:</strong> <a href="https://github.com/salgo60/ProjectOutdoorGyms/issues/97">#97</a></p>
+<p><strong>Notebook:</strong> <a href="https://github.com/salgo60/ProjectOutdoorGyms/blob/main/Jupyter/97_outdoorgym.ipynb">97_outdoorgym.ipynb</a></p>
+<p><strong>Report 1 before updating:</strong> <a href="https://salgo60.github.io/ProjectOutdoorGyms/Jupyter/utegym_report_Nacka_2025_12_12.html">utegym_report_Nacka_2025_12_12.html</a></p>
+
+
+<p>Genererad: <strong>2025-12-12 20:59:03</strong></p>
+
+<div class="section">
+    <h2>Kartor (lokala + Wikidata)</h2>
+    <p></p>
+    <div class="map-row">
+        <div class="map-box">
+            <h3>Karta 1: Nacka</h3>
+            <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_529c49e6462e54abbce101f6b91766fd {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_529c49e6462e54abbce101f6b91766fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_529c49e6462e54abbce101f6b91766fd = L.map(
+                "map_529c49e6462e54abbce101f6b91766fd",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0154fc36265c15e6af3833333453b50c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0154fc36265c15e6af3833333453b50c.addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var marker_a6f20eb43b9b23900ff5a9a89a3eb52a = L.marker(
+                [59.31783292473409, 18.179951733568213],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_42d1453a9122337864f042ba86ce1089 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6191a969717f27b2a6ef578c790d5b4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c7e88c128c464160cff9b9d853c43b8b = $(`<div id="html_c7e88c128c464160cff9b9d853c43b8b" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Nyckelviken</b><br><br>          <b>PKID:</b> 76489<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 475.908099386268 m²<br>                           <b>Adress:</b> Nyckelviksvägen<br>         <b>Inlagd:</b> 2022-11-01<br>         <b>Ändrad:</b> 2021-05-31<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.317833<br>         Lon: 18.179952<br>     </div>     </div>`)[0];
+                popup_a6191a969717f27b2a6ef578c790d5b4.setContent(html_c7e88c128c464160cff9b9d853c43b8b);
+            
+        
+
+        marker_a6f20eb43b9b23900ff5a9a89a3eb52a.bindPopup(popup_a6191a969717f27b2a6ef578c790d5b4)
+        ;
+
+        
+    
+    
+                marker_a6f20eb43b9b23900ff5a9a89a3eb52a.setIcon(icon_42d1453a9122337864f042ba86ce1089);
+            
+    
+            var marker_9d6a042fb89cfe693622a590f319928c = L.marker(
+                [59.34671701443543, 18.32000767459512],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_52ab3b5b340d7337b3c317f97358d3fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d03b0353b6c034f8fcf1f7f14516d94 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fd86b699f81d080e1aa912bdea88ed91 = $(`<div id="html_fd86b699f81d080e1aa912bdea88ed91" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Velamsund</b><br><br>          <b>PKID:</b> 76491<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 625.345713303509 m²<br>                           <b>Adress:</b> Velamsundsvägen 33<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.346717<br>         Lon: 18.320008<br>     </div>     </div>`)[0];
+                popup_8d03b0353b6c034f8fcf1f7f14516d94.setContent(html_fd86b699f81d080e1aa912bdea88ed91);
+            
+        
+
+        marker_9d6a042fb89cfe693622a590f319928c.bindPopup(popup_8d03b0353b6c034f8fcf1f7f14516d94)
+        ;
+
+        
+    
+    
+                marker_9d6a042fb89cfe693622a590f319928c.setIcon(icon_52ab3b5b340d7337b3c317f97358d3fb);
+            
+    
+            var marker_297b3efa64bad6037f3c437d5887a590 = L.marker(
+                [59.28983945430401, 18.159092033006402],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_0e2604f98cc4b5104a39fbeccbf92540 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c2fe899a2b70cf4c8d997d928b0be1e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_84d075c5287d6858483c86372f4aaf5b = $(`<div id="html_84d075c5287d6858483c86372f4aaf5b" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Hellasgården</b><br><br>          <b>PKID:</b> 76602<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 725.504115879835 m²<br>         <b>Ansvar:</b> Stockholm<br>                           <b>Inlagd:</b> 2018-11-06<br>         <b>Ändrad:</b> 2022-10-26<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.289839<br>         Lon: 18.159092<br>     </div>     </div>`)[0];
+                popup_4c2fe899a2b70cf4c8d997d928b0be1e.setContent(html_84d075c5287d6858483c86372f4aaf5b);
+            
+        
+
+        marker_297b3efa64bad6037f3c437d5887a590.bindPopup(popup_4c2fe899a2b70cf4c8d997d928b0be1e)
+        ;
+
+        
+    
+    
+                marker_297b3efa64bad6037f3c437d5887a590.setIcon(icon_0e2604f98cc4b5104a39fbeccbf92540);
+            
+    
+            var marker_7a8b01b8f27be2dc86d6c08074336175 = L.marker(
+                [59.302306121114626, 18.121600464589374],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_6839536179a658d7b6a9cc0a11d072bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e290f4491ef7f184333431118264c91 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_47e95a41b1f5adb4ffb63ae607d5ccab = $(`<div id="html_47e95a41b1f5adb4ffb63ae607d5ccab" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Sickla strand</b><br><br>          <b>PKID:</b> 76448<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 52.6165429800741 m²<br>                           <b>Adress:</b> Sickla strand 25<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.302306<br>         Lon: 18.121600<br>     </div>     </div>`)[0];
+                popup_0e290f4491ef7f184333431118264c91.setContent(html_47e95a41b1f5adb4ffb63ae607d5ccab);
+            
+        
+
+        marker_7a8b01b8f27be2dc86d6c08074336175.bindPopup(popup_0e290f4491ef7f184333431118264c91)
+        ;
+
+        
+    
+    
+                marker_7a8b01b8f27be2dc86d6c08074336175.setIcon(icon_6839536179a658d7b6a9cc0a11d072bc);
+            
+    
+            var marker_d5af11b8106a74df2f15984cadcce130 = L.marker(
+                [59.24967749631198, 18.187016747287252],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_6dcbdbc9bb65c2cbffc320b2e783c79e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ae7c35b4dd5cdf0599ce159c4fc3af8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_833cf4a5a4f606dfb6a725139b4d3deb = $(`<div id="html_833cf4a5a4f606dfb6a725139b4d3deb" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Hedvigslund</b><br><br>          <b>PKID:</b> 76422<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 77.6255508205493 m²<br>                           <b>Adress:</b> Anemonvägen 38<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.249677<br>         Lon: 18.187017<br>     </div>     </div>`)[0];
+                popup_4ae7c35b4dd5cdf0599ce159c4fc3af8.setContent(html_833cf4a5a4f606dfb6a725139b4d3deb);
+            
+        
+
+        marker_d5af11b8106a74df2f15984cadcce130.bindPopup(popup_4ae7c35b4dd5cdf0599ce159c4fc3af8)
+        ;
+
+        
+    
+    
+                marker_d5af11b8106a74df2f15984cadcce130.setIcon(icon_6dcbdbc9bb65c2cbffc320b2e783c79e);
+            
+    
+            var marker_6b88b8161c75f8eb515cb397b33a7efd = L.marker(
+                [59.290450469625384, 18.26251919670847],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_afac4509563db0e8613492ae4409f98c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bad156a5ff5d4f1ef853420ec4e0b3e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b20043855cf51704b1715cbf070b565a = $(`<div id="html_b20043855cf51704b1715cbf070b565a" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Gröna dalen, Fisksätra</b><br><br>          <b>PKID:</b> 79873<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 505.436979744227 m²<br>                           <b>Adress:</b> Gröna dalen<br>         <b>Inlagd:</b> 2022-06-15<br>         <b>Ändrad:</b> 2023-02-08<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.290450<br>         Lon: 18.262519<br>     </div>     </div>`)[0];
+                popup_9bad156a5ff5d4f1ef853420ec4e0b3e.setContent(html_b20043855cf51704b1715cbf070b565a);
+            
+        
+
+        marker_6b88b8161c75f8eb515cb397b33a7efd.bindPopup(popup_9bad156a5ff5d4f1ef853420ec4e0b3e)
+        ;
+
+        
+    
+    
+                marker_6b88b8161c75f8eb515cb397b33a7efd.setIcon(icon_afac4509563db0e8613492ae4409f98c);
+            
+    
+            var marker_a00c2a5d5f001a44d472f1a08ea50077 = L.marker(
+                [59.329865723598736, 18.260073075618767],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_0ff0cfee88af897b0a2d0df355648f51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_357016c30831076ee3ec9e257eee280f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d76ee86de822a7bcb6bc5ebb3681f276 = $(`<div id="html_d76ee86de822a7bcb6bc5ebb3681f276" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Sarvträsk, Orminge</b><br><br>          <b>PKID:</b> 76426<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 69.9461577158723 m²<br>                           <b>Adress:</b> Sandövägen 4<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.329866<br>         Lon: 18.260073<br>     </div>     </div>`)[0];
+                popup_357016c30831076ee3ec9e257eee280f.setContent(html_d76ee86de822a7bcb6bc5ebb3681f276);
+            
+        
+
+        marker_a00c2a5d5f001a44d472f1a08ea50077.bindPopup(popup_357016c30831076ee3ec9e257eee280f)
+        ;
+
+        
+    
+    
+                marker_a00c2a5d5f001a44d472f1a08ea50077.setIcon(icon_0ff0cfee88af897b0a2d0df355648f51);
+            
+    
+            var marker_f5de7e4e94ec9d334b7ab6e9fbd57442 = L.marker(
+                [59.27779320043651, 18.279911843061356],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_2cb9bd2b12a70a329f8cca24e66c597e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b992f7b9184bf2608fa0513ed9b30339 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d1c5fd55228e8eea9592bbfacbb61ae9 = $(`<div id="html_d1c5fd55228e8eea9592bbfacbb61ae9" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Tattby, nära Samskolan</b><br><br>          <b>PKID:</b> 76427<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 331.896465812666 m²<br>                           <b>Adress:</b> Samskolevägen 6<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.277793<br>         Lon: 18.279912<br>     </div>     </div>`)[0];
+                popup_b992f7b9184bf2608fa0513ed9b30339.setContent(html_d1c5fd55228e8eea9592bbfacbb61ae9);
+            
+        
+
+        marker_f5de7e4e94ec9d334b7ab6e9fbd57442.bindPopup(popup_b992f7b9184bf2608fa0513ed9b30339)
+        ;
+
+        
+    
+    
+                marker_f5de7e4e94ec9d334b7ab6e9fbd57442.setIcon(icon_2cb9bd2b12a70a329f8cca24e66c597e);
+            
+    
+            var marker_05ea0ecec8d4a39b603c53297c36900b = L.marker(
+                [59.31252999304202, 18.250508376983724],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_5a7c219545d46fe43af110d49b6a9233 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88a4c5778fe3ceafce041ebcceb09b4c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2542177885143194e13effc13034abc6 = $(`<div id="html_2542177885143194e13effc13034abc6" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Kocktorpssjön</b><br><br>          <b>PKID:</b> 77010<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 702.086429420357 m²<br>                           <b>Adress:</b> Skivlingevägen 24<br>         <b>Inlagd:</b> 2019-06-27<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.312530<br>         Lon: 18.250508<br>     </div>     </div>`)[0];
+                popup_88a4c5778fe3ceafce041ebcceb09b4c.setContent(html_2542177885143194e13effc13034abc6);
+            
+        
+
+        marker_05ea0ecec8d4a39b603c53297c36900b.bindPopup(popup_88a4c5778fe3ceafce041ebcceb09b4c)
+        ;
+
+        
+    
+    
+                marker_05ea0ecec8d4a39b603c53297c36900b.setIcon(icon_5a7c219545d46fe43af110d49b6a9233);
+            
+    
+            var marker_f35a48c6c80a20cebad5597755f5a9cd = L.marker(
+                [59.294583896234734, 18.253774019952814],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_f63a34fc826c179e14c16f179394b7bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_041366eb16a8bb8e5babae8bcd344a5e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e778058c35caa141af2e2fb29838ca47 = $(`<div id="html_e778058c35caa141af2e2fb29838ca47" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Fisksätra IP</b><br><br>          <b>PKID:</b> 77006<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 130.056814181514 m²<br>         <b>Ansvar:</b> idrott<br>                           <b>Inlagd:</b> 2019-06-27<br>         <b>Ändrad:</b> 2022-12-09<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.294584<br>         Lon: 18.253774<br>     </div>     </div>`)[0];
+                popup_041366eb16a8bb8e5babae8bcd344a5e.setContent(html_e778058c35caa141af2e2fb29838ca47);
+            
+        
+
+        marker_f35a48c6c80a20cebad5597755f5a9cd.bindPopup(popup_041366eb16a8bb8e5babae8bcd344a5e)
+        ;
+
+        
+    
+    
+                marker_f35a48c6c80a20cebad5597755f5a9cd.setIcon(icon_f63a34fc826c179e14c16f179394b7bd);
+            
+    
+            var marker_5c323c882e228e03f6be4b8c9159be73 = L.marker(
+                [59.329448932059286, 18.241169890979915],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_13b6da69f943ec5b41ee5a7d04f3f234 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3f13e6ae5abbbedd79f471edf5cb361 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a5bb7039dc9386e594e70d721e797bf9 = $(`<div id="html_a5bb7039dc9386e594e70d721e797bf9" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Krokhöjden</b><br><br>          <b>PKID:</b> 76480<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 447.726558814312 m²<br>                           <b>Adress:</b> Arnövägen 15<br>         <b>Inlagd:</b> 2018-11-01<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.329449<br>         Lon: 18.241170<br>     </div>     </div>`)[0];
+                popup_a3f13e6ae5abbbedd79f471edf5cb361.setContent(html_a5bb7039dc9386e594e70d721e797bf9);
+            
+        
+
+        marker_5c323c882e228e03f6be4b8c9159be73.bindPopup(popup_a3f13e6ae5abbbedd79f471edf5cb361)
+        ;
+
+        
+    
+    
+                marker_5c323c882e228e03f6be4b8c9159be73.setIcon(icon_13b6da69f943ec5b41ee5a7d04f3f234);
+            
+    
+            var marker_6145c9f661178191bf8a9eb193211668 = L.marker(
+                [59.307321401730285, 18.193666546914883],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_2e4f3b07bf7098c5516936918e054fdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b22b838d979b291ef2d625ebc32f5be3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f57ade549b048805a46b29925303fd68 = $(`<div id="html_f57ade549b048805a46b29925303fd68" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Långsjön</b><br><br>          <b>PKID:</b> 76577<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 485.48853089352 m²<br>                           <b>Adress:</b> Bävervägen 2<br>         <b>Inlagd:</b> 2018-11-05<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.307321<br>         Lon: 18.193667<br>     </div>     </div>`)[0];
+                popup_b22b838d979b291ef2d625ebc32f5be3.setContent(html_f57ade549b048805a46b29925303fd68);
+            
+        
+
+        marker_6145c9f661178191bf8a9eb193211668.bindPopup(popup_b22b838d979b291ef2d625ebc32f5be3)
+        ;
+
+        
+    
+    
+                marker_6145c9f661178191bf8a9eb193211668.setIcon(icon_2e4f3b07bf7098c5516936918e054fdd);
+            
+    
+            var marker_f56c5cd3a56729f2fbc69d0478d57951 = L.marker(
+                [59.31695529163657, 18.144974148637314],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_f135e9e4de6b3f783437b42be7deea52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cbbd78121a7b787fb14adf0e0aa1314 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cf173d6617ced5b9e38d09858925a7c7 = $(`<div id="html_cf173d6617ced5b9e38d09858925a7c7" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Kvarnholmsparken</b><br><br>          <b>PKID:</b> 76603<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 213.157034089596 m²<br>                           <b>Adress:</b> Mjölnarvägen 32<br>         <b>Inlagd:</b> 2018-11-06<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.316955<br>         Lon: 18.144974<br>     </div>     </div>`)[0];
+                popup_1cbbd78121a7b787fb14adf0e0aa1314.setContent(html_cf173d6617ced5b9e38d09858925a7c7);
+            
+        
+
+        marker_f56c5cd3a56729f2fbc69d0478d57951.bindPopup(popup_1cbbd78121a7b787fb14adf0e0aa1314)
+        ;
+
+        
+    
+    
+                marker_f56c5cd3a56729f2fbc69d0478d57951.setIcon(icon_f135e9e4de6b3f783437b42be7deea52);
+            
+    
+            var marker_60c11c27d8064aa29c8e58e5178bf6cc = L.marker(
+                [59.32441049957718, 18.20606340624574],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_246ef226597b5d08b41f0613c1bdc6c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f35ea3ab986b73ef72a8ce75f83502ee = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4450f920206ce57f527b0945913adee6 = $(`<div id="html_4450f920206ce57f527b0945913adee6" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Rudsjöparkens utegym</b><br><br>          <b>PKID:</b> 77078<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 95.6158314405769 m²<br>                           <b>Adress:</b> Rudsjövägen 4<br>         <b>Inlagd:</b> 2019-07-08<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.324410<br>         Lon: 18.206063<br>     </div>     </div>`)[0];
+                popup_f35ea3ab986b73ef72a8ce75f83502ee.setContent(html_4450f920206ce57f527b0945913adee6);
+            
+        
+
+        marker_60c11c27d8064aa29c8e58e5178bf6cc.bindPopup(popup_f35ea3ab986b73ef72a8ce75f83502ee)
+        ;
+
+        
+    
+    
+                marker_60c11c27d8064aa29c8e58e5178bf6cc.setIcon(icon_246ef226597b5d08b41f0613c1bdc6c7);
+            
+    
+            var marker_e359f4c4f34aa8a0136f5bc69723544e = L.marker(
+                [59.26334218545299, 18.17708332637994],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_61dc93a7ec0140ef3db12931769904b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70671469d8d4a23fa850f10d1a90aa23 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_07507ee47a7dde359c3f6f7d9dc04e16 = $(`<div id="html_07507ee47a7dde359c3f6f7d9dc04e16" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Älta IP</b><br><br>          <b>PKID:</b> 76604<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 353.746583962453 m²<br>         <b>Ansvar:</b> idrott<br>                           <b>Inlagd:</b> 2018-11-06<br>         <b>Ändrad:</b> 2022-12-09<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.263342<br>         Lon: 18.177083<br>     </div>     </div>`)[0];
+                popup_70671469d8d4a23fa850f10d1a90aa23.setContent(html_07507ee47a7dde359c3f6f7d9dc04e16);
+            
+        
+
+        marker_e359f4c4f34aa8a0136f5bc69723544e.bindPopup(popup_70671469d8d4a23fa850f10d1a90aa23)
+        ;
+
+        
+    
+    
+                marker_e359f4c4f34aa8a0136f5bc69723544e.setIcon(icon_61dc93a7ec0140ef3db12931769904b6);
+            
+    
+            var marker_18ec5068ec3454e225e46627b94cf57a = L.marker(
+                [59.25427558695531, 18.20482608809121],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_64c07ae3c5cd6bb89bc995afb3fde3a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbe9d95da2c6c6b0977cf2636016c8a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_334eda6b9a32c6e3f94250ae8a2bd3c4 = $(`<div id="html_334eda6b9a32c6e3f94250ae8a2bd3c4" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Ältadalen</b><br><br>          <b>PKID:</b> 77689<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 1594.72459427249 m²<br>                           <b>Adress:</b> Storkällansväg<br>         <b>Inlagd:</b> 2020-04-24<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.254276<br>         Lon: 18.204826<br>     </div>     </div>`)[0];
+                popup_cbe9d95da2c6c6b0977cf2636016c8a3.setContent(html_334eda6b9a32c6e3f94250ae8a2bd3c4);
+            
+        
+
+        marker_18ec5068ec3454e225e46627b94cf57a.bindPopup(popup_cbe9d95da2c6c6b0977cf2636016c8a3)
+        ;
+
+        
+    
+    
+                marker_18ec5068ec3454e225e46627b94cf57a.setIcon(icon_64c07ae3c5cd6bb89bc995afb3fde3a1);
+            
+    
+            var marker_52fa6b334cce5def735d91766078143a = L.marker(
+                [59.31067975710323, 18.113446030402873],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_56e1aaca0afe3f9012a384ce75fc1095 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fcb1a98145e7a10e4ca3aafe87120fc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e975c039f1865197845f0b8e53065093 = $(`<div id="html_e975c039f1865197845f0b8e53065093" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Henriksdalsberget</b><br><br>          <b>PKID:</b> 78164<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 565.465655603147 m²<br>                           <b>Adress:</b> Henriksdalsringen 8<br>         <b>Inlagd:</b> 2020-10-05<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.310680<br>         Lon: 18.113446<br>     </div>     </div>`)[0];
+                popup_6fcb1a98145e7a10e4ca3aafe87120fc.setContent(html_e975c039f1865197845f0b8e53065093);
+            
+        
+
+        marker_52fa6b334cce5def735d91766078143a.bindPopup(popup_6fcb1a98145e7a10e4ca3aafe87120fc)
+        ;
+
+        
+    
+    
+                marker_52fa6b334cce5def735d91766078143a.setIcon(icon_56e1aaca0afe3f9012a384ce75fc1095);
+            
+    
+            var marker_4688170b37f565e87acd0116cebba8c2 = L.marker(
+                [59.30297118045249, 18.235175597339833],
+                {
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+    
+            var icon_39e11cd7d6b93a8e71d29522cb23a7aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7afb754984a75e173fe6d55fb507f8d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_eac2093dbcaff8b04240b597bcd730b5 = $(`<div id="html_eac2093dbcaff8b04240b597bcd730b5" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px; line-height:1.4'>         <b style='font-size:16px'>Tollare</b><br><br>          <b>PKID:</b> 78866<br>                  <b>Typ:</b> utegym<br>         <b>Area:</b> 236.293325867006 m²<br>                           <b>Adress:</b> Hedenströmsväg 11<br>         <b>Inlagd:</b> 2021-11-12<br>         <b>Ändrad:</b> 2022-11-01<br>                   <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>          <br>         <b>Koordinater:</b><br>         Lat: 59.302971<br>         Lon: 18.235176<br>     </div>     </div>`)[0];
+                popup_f7afb754984a75e173fe6d55fb507f8d.setContent(html_eac2093dbcaff8b04240b597bcd730b5);
+            
+        
+
+        marker_4688170b37f565e87acd0116cebba8c2.bindPopup(popup_f7afb754984a75e173fe6d55fb507f8d)
+        ;
+
+        
+    
+    
+                marker_4688170b37f565e87acd0116cebba8c2.setIcon(icon_39e11cd7d6b93a8e71d29522cb23a7aa);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_529c49e6462e54abbce101f6b91766fd);
+        
+</script>
+</html>
+        </div>
+        <div class="map-box">
+            <h3>Karta 2: Wikidata</h3>
+            &nbsp;&nbsp;<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2858383e49b5d22e5fbc57f4000a6cab {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2858383e49b5d22e5fbc57f4000a6cab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2858383e49b5d22e5fbc57f4000a6cab = L.map(
+                "map_2858383e49b5d22e5fbc57f4000a6cab",
+                {
+                    center: [59.30145199594736, 18.21194895942105],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8d6f977210bff37cbaa9ce569ba30b3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e8d6f977210bff37cbaa9ce569ba30b3.addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var marker_0609a2676bfe3a0bab940ee85a2386f1 = L.marker(
+                [59.29459, 18.25375],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_26a31762cd6dad82e7761fdb5eb849b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_495ae143b7ecbf6252048b4c87cc378a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_339b93ab63238c949e732b3323b39b15 = $(`<div id="html_339b93ab63238c949e732b3323b39b15" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Fisksätra IP utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400635' target='_blank'>Q107400635</a><br>         Lat/Lon: 59.29459, 18.25375<br>              </div>     </div>`)[0];
+                popup_495ae143b7ecbf6252048b4c87cc378a.setContent(html_339b93ab63238c949e732b3323b39b15);
+            
+        
+
+        marker_0609a2676bfe3a0bab940ee85a2386f1.bindPopup(popup_495ae143b7ecbf6252048b4c87cc378a)
+        ;
+
+        
+    
+    
+                marker_0609a2676bfe3a0bab940ee85a2386f1.setIcon(icon_26a31762cd6dad82e7761fdb5eb849b0);
+            
+    
+            var marker_956b03c666ac14c76d100604bc108892 = L.marker(
+                [59.290450469, 18.262519196],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_61b8a9a964cf7821c48f11e2ae1d6e3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2adc34b9963e479674b9659ff219c3c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63b658c3748906d3b09615a9c9835dae = $(`<div id="html_63b658c3748906d3b09615a9c9835dae" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Gröna dalen utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q137371031' target='_blank'>Q137371031</a><br>         Lat/Lon: 59.29045, 18.26252<br>              </div>     </div>`)[0];
+                popup_2adc34b9963e479674b9659ff219c3c7.setContent(html_63b658c3748906d3b09615a9c9835dae);
+            
+        
+
+        marker_956b03c666ac14c76d100604bc108892.bindPopup(popup_2adc34b9963e479674b9659ff219c3c7)
+        ;
+
+        
+    
+    
+                marker_956b03c666ac14c76d100604bc108892.setIcon(icon_61b8a9a964cf7821c48f11e2ae1d6e3d);
+            
+    
+            var marker_2e701414977aaa44d5ad83f9e4eb26b7 = L.marker(
+                [59.24964, 18.18689],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_35aa13c0b2cfa851bf5e0ee7518c3f3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6773dbb42984a90a0052bc844b38d303 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3cbb86b9544ba1e3685eb0857029ba3 = $(`<div id="html_b3cbb86b9544ba1e3685eb0857029ba3" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Hedvigslund utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107401051' target='_blank'>Q107401051</a><br>         Lat/Lon: 59.24964, 18.18689<br>              </div>     </div>`)[0];
+                popup_6773dbb42984a90a0052bc844b38d303.setContent(html_b3cbb86b9544ba1e3685eb0857029ba3);
+            
+        
+
+        marker_2e701414977aaa44d5ad83f9e4eb26b7.bindPopup(popup_6773dbb42984a90a0052bc844b38d303)
+        ;
+
+        
+    
+    
+                marker_2e701414977aaa44d5ad83f9e4eb26b7.setIcon(icon_35aa13c0b2cfa851bf5e0ee7518c3f3d);
+            
+    
+            var marker_388ebf92c8d196316733fa4b4e11d556 = L.marker(
+                [59.289839454, 18.159092033],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_7cc3b39a62dfb013a780b4a2d14375d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30b78945e441f0498e886918372b76fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6f9a835eebe439c3b1b07a0cd223317 = $(`<div id="html_b6f9a835eebe439c3b1b07a0cd223317" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Hellasgårdens utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107208326' target='_blank'>Q107208326</a><br>         Lat/Lon: 59.28984, 18.15909<br>              </div>     </div>`)[0];
+                popup_30b78945e441f0498e886918372b76fc.setContent(html_b6f9a835eebe439c3b1b07a0cd223317);
+            
+        
+
+        marker_388ebf92c8d196316733fa4b4e11d556.bindPopup(popup_30b78945e441f0498e886918372b76fc)
+        ;
+
+        
+    
+    
+                marker_388ebf92c8d196316733fa4b4e11d556.setIcon(icon_7cc3b39a62dfb013a780b4a2d14375d9);
+            
+    
+            var marker_bd91d53859b6865b268aa2126760f0d6 = L.marker(
+                [59.31069, 18.11359],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_90c6d5ee87596b4aa9eeebd9c570be96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44865bb5852e5d6ef1e134fccb563d49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e65ce3a3eb8f3e402e16ed77d1d97de = $(`<div id="html_2e65ce3a3eb8f3e402e16ed77d1d97de" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Henrikdalsberget utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400739' target='_blank'>Q107400739</a><br>         Lat/Lon: 59.31069, 18.11359<br>              </div>     </div>`)[0];
+                popup_44865bb5852e5d6ef1e134fccb563d49.setContent(html_2e65ce3a3eb8f3e402e16ed77d1d97de);
+            
+        
+
+        marker_bd91d53859b6865b268aa2126760f0d6.bindPopup(popup_44865bb5852e5d6ef1e134fccb563d49)
+        ;
+
+        
+    
+    
+                marker_bd91d53859b6865b268aa2126760f0d6.setIcon(icon_90c6d5ee87596b4aa9eeebd9c570be96);
+            
+    
+            var marker_f3b91cd245d4473eb5fac8bd2082ae6d = L.marker(
+                [59.31249, 18.25034],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_b783ff4a022543d0880a6d6e6557e226 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11096cb331b624fca178dd700bfb8bd7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a10395b3eb5d6e6168b0ec6776b36c11 = $(`<div id="html_a10395b3eb5d6e6168b0ec6776b36c11" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Kocktorpssjöns utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400643' target='_blank'>Q107400643</a><br>         Lat/Lon: 59.31249, 18.25034<br>              </div>     </div>`)[0];
+                popup_11096cb331b624fca178dd700bfb8bd7.setContent(html_a10395b3eb5d6e6168b0ec6776b36c11);
+            
+        
+
+        marker_f3b91cd245d4473eb5fac8bd2082ae6d.bindPopup(popup_11096cb331b624fca178dd700bfb8bd7)
+        ;
+
+        
+    
+    
+                marker_f3b91cd245d4473eb5fac8bd2082ae6d.setIcon(icon_b783ff4a022543d0880a6d6e6557e226);
+            
+    
+            var marker_e6731dedfbf6344dc45baf93231f10b2 = L.marker(
+                [59.329467, 18.241071],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_24d817bb28d4870064f7f2fab47ac6bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e91c5972509762ab849b56c15bddd50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2db0f4d3c690643da73c7c3f93dd313 = $(`<div id="html_e2db0f4d3c690643da73c7c3f93dd313" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Krokhöjdens utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400650' target='_blank'>Q107400650</a><br>         Lat/Lon: 59.32947, 18.24107<br>              </div>     </div>`)[0];
+                popup_7e91c5972509762ab849b56c15bddd50.setContent(html_e2db0f4d3c690643da73c7c3f93dd313);
+            
+        
+
+        marker_e6731dedfbf6344dc45baf93231f10b2.bindPopup(popup_7e91c5972509762ab849b56c15bddd50)
+        ;
+
+        
+    
+    
+                marker_e6731dedfbf6344dc45baf93231f10b2.setIcon(icon_24d817bb28d4870064f7f2fab47ac6bf);
+            
+    
+            var marker_c5764bf9ea7898f6e0c03adbcd9794b9 = L.marker(
+                [59.31683, 18.1447],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_9ed8cc896c95a699afba355436edb028 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e84a40756e7cf5c1335c0091dee2afc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64ea53d6c2cec55c6540b4f5c4b848bf = $(`<div id="html_64ea53d6c2cec55c6540b4f5c4b848bf" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Kvarnholmen utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400751' target='_blank'>Q107400751</a><br>         Lat/Lon: 59.31683, 18.14470<br>              </div>     </div>`)[0];
+                popup_e84a40756e7cf5c1335c0091dee2afc2.setContent(html_64ea53d6c2cec55c6540b4f5c4b848bf);
+            
+        
+
+        marker_c5764bf9ea7898f6e0c03adbcd9794b9.bindPopup(popup_e84a40756e7cf5c1335c0091dee2afc2)
+        ;
+
+        
+    
+    
+                marker_c5764bf9ea7898f6e0c03adbcd9794b9.setIcon(icon_9ed8cc896c95a699afba355436edb028);
+            
+    
+            var marker_40925ac5f349894d2f5d201475af96bb = L.marker(
+                [59.30733, 18.19367],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_bc1e704608a798fd892d3c0759d22e31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2911bb08abb962dd5e16cdc7e08644dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ccd43be2f2264cd9b16007b38ace2de = $(`<div id="html_4ccd43be2f2264cd9b16007b38ace2de" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Långsjöns utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400759' target='_blank'>Q107400759</a><br>         Lat/Lon: 59.30733, 18.19367<br>              </div>     </div>`)[0];
+                popup_2911bb08abb962dd5e16cdc7e08644dc.setContent(html_4ccd43be2f2264cd9b16007b38ace2de);
+            
+        
+
+        marker_40925ac5f349894d2f5d201475af96bb.bindPopup(popup_2911bb08abb962dd5e16cdc7e08644dc)
+        ;
+
+        
+    
+    
+                marker_40925ac5f349894d2f5d201475af96bb.setIcon(icon_bc1e704608a798fd892d3c0759d22e31);
+            
+    
+            var marker_ee10c68a4c4f4e39d8e3db302ca90a1c = L.marker(
+                [59.31786, 18.18002],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_af1488239c42fa587e9aaec37fedce03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6f34438cec3cec96d70c312ed395a46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fcb975044c44bdbac8c60ff73122b73 = $(`<div id="html_0fcb975044c44bdbac8c60ff73122b73" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Nyckelviken utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400814' target='_blank'>Q107400814</a><br>         Lat/Lon: 59.31786, 18.18002<br>              </div>     </div>`)[0];
+                popup_a6f34438cec3cec96d70c312ed395a46.setContent(html_0fcb975044c44bdbac8c60ff73122b73);
+            
+        
+
+        marker_ee10c68a4c4f4e39d8e3db302ca90a1c.bindPopup(popup_a6f34438cec3cec96d70c312ed395a46)
+        ;
+
+        
+    
+    
+                marker_ee10c68a4c4f4e39d8e3db302ca90a1c.setIcon(icon_af1488239c42fa587e9aaec37fedce03);
+            
+    
+            var marker_c17643f896cb8bb3ea297b0fadff96e2 = L.marker(
+                [59.32441, 18.20603],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_30684ecfff33d383a4a140fd86744851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e794bd0e9c9077313f12a36b3b1670 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b1d1bbe3d729160d650fd6c77da2e04 = $(`<div id="html_7b1d1bbe3d729160d650fd6c77da2e04" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Rudsjöparken utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400823' target='_blank'>Q107400823</a><br>         Lat/Lon: 59.32441, 18.20603<br>              </div>     </div>`)[0];
+                popup_b5e794bd0e9c9077313f12a36b3b1670.setContent(html_7b1d1bbe3d729160d650fd6c77da2e04);
+            
+        
+
+        marker_c17643f896cb8bb3ea297b0fadff96e2.bindPopup(popup_b5e794bd0e9c9077313f12a36b3b1670)
+        ;
+
+        
+    
+    
+                marker_c17643f896cb8bb3ea297b0fadff96e2.setIcon(icon_30684ecfff33d383a4a140fd86744851);
+            
+    
+            var marker_ea0fd840d4ff2440e2391ab8323b8b23 = L.marker(
+                [59.329866, 18.260073],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_37e6a3c0a671358c62e66a51815f670f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa6145ea747458d7895dace2f9b30997 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3b5c37f5e9b64f5011072570f762158 = $(`<div id="html_a3b5c37f5e9b64f5011072570f762158" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Sarvträsks utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400658' target='_blank'>Q107400658</a><br>         Lat/Lon: 59.32987, 18.26007<br>              </div>     </div>`)[0];
+                popup_aa6145ea747458d7895dace2f9b30997.setContent(html_a3b5c37f5e9b64f5011072570f762158);
+            
+        
+
+        marker_ea0fd840d4ff2440e2391ab8323b8b23.bindPopup(popup_aa6145ea747458d7895dace2f9b30997)
+        ;
+
+        
+    
+    
+                marker_ea0fd840d4ff2440e2391ab8323b8b23.setIcon(icon_37e6a3c0a671358c62e66a51815f670f);
+            
+    
+            var marker_0db5ec616a1a97ccfac37f3e586dec43 = L.marker(
+                [59.30229, 18.12159],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_85899a6b0508e131a194a956312d6aec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ff1800822e9486acc989eaa83d438c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5edb774b8dcd2bfa99a3e1f60afcefb9 = $(`<div id="html_5edb774b8dcd2bfa99a3e1f60afcefb9" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Sickla strand utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400836' target='_blank'>Q107400836</a><br>         Lat/Lon: 59.30229, 18.12159<br>              </div>     </div>`)[0];
+                popup_0ff1800822e9486acc989eaa83d438c4.setContent(html_5edb774b8dcd2bfa99a3e1f60afcefb9);
+            
+        
+
+        marker_0db5ec616a1a97ccfac37f3e586dec43.bindPopup(popup_0ff1800822e9486acc989eaa83d438c4)
+        ;
+
+        
+    
+    
+                marker_0db5ec616a1a97ccfac37f3e586dec43.setIcon(icon_85899a6b0508e131a194a956312d6aec);
+            
+    
+            var marker_3164bf3e67de3f73f94bc1aaf5ad69ac = L.marker(
+                [59.277793, 18.279912],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_166047428e636afbec1ac912ccc678ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09fcf89a9ea94e03e5b31bfbcc80c89d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cf2fe2b6f3168ff5ca75dff77b75018 = $(`<div id="html_5cf2fe2b6f3168ff5ca75dff77b75018" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Tattby utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400598' target='_blank'>Q107400598</a><br>         Lat/Lon: 59.27779, 18.27991<br>              </div>     </div>`)[0];
+                popup_09fcf89a9ea94e03e5b31bfbcc80c89d.setContent(html_5cf2fe2b6f3168ff5ca75dff77b75018);
+            
+        
+
+        marker_3164bf3e67de3f73f94bc1aaf5ad69ac.bindPopup(popup_09fcf89a9ea94e03e5b31bfbcc80c89d)
+        ;
+
+        
+    
+    
+                marker_3164bf3e67de3f73f94bc1aaf5ad69ac.setIcon(icon_166047428e636afbec1ac912ccc678ad);
+            
+    
+            var marker_ae6313050b4d4e337ba0889d920abfb2 = L.marker(
+                [59.302987, 18.235178],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_c82231868bbbd101aad478622c4ec548 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44bfc8f2ea7d02439d629d02a99dade8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab8362d61d49b3d1780b30b34d3c636a = $(`<div id="html_ab8362d61d49b3d1780b30b34d3c636a" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Tollare utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q109691809' target='_blank'>Q109691809</a><br>         Lat/Lon: 59.30299, 18.23518<br>              </div>     </div>`)[0];
+                popup_44bfc8f2ea7d02439d629d02a99dade8.setContent(html_ab8362d61d49b3d1780b30b34d3c636a);
+            
+        
+
+        marker_ae6313050b4d4e337ba0889d920abfb2.bindPopup(popup_44bfc8f2ea7d02439d629d02a99dade8)
+        ;
+
+        
+    
+    
+                marker_ae6313050b4d4e337ba0889d920abfb2.setIcon(icon_c82231868bbbd101aad478622c4ec548);
+            
+    
+            var marker_f4de004660da3acaf467ad0422559e79 = L.marker(
+                [59.306675, 18.236715],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_52d0805d5ea4d4c89e5bd860fd000715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4872d0f7be8b32e6d897c5ccca716949 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99555206a4c62ac5715159f47d2c8ae7 = $(`<div id="html_99555206a4c62ac5715159f47d2c8ae7" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Tollareängsvägen utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107723370' target='_blank'>Q107723370</a><br>         Lat/Lon: 59.30667, 18.23672<br>              </div>     </div>`)[0];
+                popup_4872d0f7be8b32e6d897c5ccca716949.setContent(html_99555206a4c62ac5715159f47d2c8ae7);
+            
+        
+
+        marker_f4de004660da3acaf467ad0422559e79.bindPopup(popup_4872d0f7be8b32e6d897c5ccca716949)
+        ;
+
+        
+    
+    
+                marker_f4de004660da3acaf467ad0422559e79.setIcon(icon_52d0805d5ea4d4c89e5bd860fd000715);
+            
+    
+            var marker_ba2910e562e5c2c6ca76e41e94cec5ad = L.marker(
+                [59.34678, 18.32],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_25f52c35fb6baf9c9747d83f8ef94053 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aeff01bc709de41939183fc38442765a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40bb46a7ec0a276a3e71cca2f1d0d434 = $(`<div id="html_40bb46a7ec0a276a3e71cca2f1d0d434" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Velamsunds utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107400679' target='_blank'>Q107400679</a><br>         Lat/Lon: 59.34678, 18.32000<br>              </div>     </div>`)[0];
+                popup_aeff01bc709de41939183fc38442765a.setContent(html_40bb46a7ec0a276a3e71cca2f1d0d434);
+            
+        
+
+        marker_ba2910e562e5c2c6ca76e41e94cec5ad.bindPopup(popup_aeff01bc709de41939183fc38442765a)
+        ;
+
+        
+    
+    
+                marker_ba2910e562e5c2c6ca76e41e94cec5ad.setIcon(icon_25f52c35fb6baf9c9747d83f8ef94053);
+            
+    
+            var marker_c31898496ff16a19cdd04b568edd392f = L.marker(
+                [59.26333, 18.17708],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_35e2ee399901213220270ed81d4c2fd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7a80c2ff2f9b72cfb3c79980178f264 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70b2e24cb3c0c2cc4bc1c3e8aa3077d4 = $(`<div id="html_70b2e24cb3c0c2cc4bc1c3e8aa3077d4" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Älta IP utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107401210' target='_blank'>Q107401210</a><br>         Lat/Lon: 59.26333, 18.17708<br>              </div>     </div>`)[0];
+                popup_f7a80c2ff2f9b72cfb3c79980178f264.setContent(html_70b2e24cb3c0c2cc4bc1c3e8aa3077d4);
+            
+        
+
+        marker_c31898496ff16a19cdd04b568edd392f.bindPopup(popup_f7a80c2ff2f9b72cfb3c79980178f264)
+        ;
+
+        
+    
+    
+                marker_c31898496ff16a19cdd04b568edd392f.setIcon(icon_35e2ee399901213220270ed81d4c2fd8);
+            
+    
+            var marker_bfa14058d057c6704da5f9c955b41530 = L.marker(
+                [59.25427, 18.20481],
+                {
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+    
+            var icon_9e6a127e93f991b970072792b24ce7eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32d98d60010064d5260483af32adfb29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a4733b9200c36a6106d6eaee5246a44 = $(`<div id="html_7a4733b9200c36a6106d6eaee5246a44" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Ältadalen utegym</b><br>         QID: <a href='https://www.wikidata.org/wiki/Q107401066' target='_blank'>Q107401066</a><br>         Lat/Lon: 59.25427, 18.20481<br>              </div>     </div>`)[0];
+                popup_32d98d60010064d5260483af32adfb29.setContent(html_7a4733b9200c36a6106d6eaee5246a44);
+            
+        
+
+        marker_bfa14058d057c6704da5f9c955b41530.bindPopup(popup_32d98d60010064d5260483af32adfb29)
+        ;
+
+        
+    
+    
+                marker_bfa14058d057c6704da5f9c955b41530.setIcon(icon_9e6a127e93f991b970072792b24ce7eb);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_2858383e49b5d22e5fbc57f4000a6cab);
+        
+</script>
+</html>
+         </div>
+         <div class="map-box">
+           <h3>Karta 3: Avvikelser</h2>
+            &nbsp;&nbsp;<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25823baf1aeab1cd8426a7ce844f7050 {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_25823baf1aeab1cd8426a7ce844f7050" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_25823baf1aeab1cd8426a7ce844f7050 = L.map(
+                "map_25823baf1aeab1cd8426a7ce844f7050",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8236197791b9ab8bb05a2ef1216171bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8236197791b9ab8bb05a2ef1216171bd.addTo(map_25823baf1aeab1cd8426a7ce844f7050);
+        
+    
+            var marker_6a548f822bb8670677a9f0fdcc65b0c7 = L.marker(
+                [59.31695529163655, 18.144974148637314],
+                {
+}
+            ).addTo(map_25823baf1aeab1cd8426a7ce844f7050);
+        
+    
+            var icon_311bcf43f3e07f53925b8d4cb86997ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de403a0a0f81af410ee6c3d6e402af37 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4e77505d0bc798c29ceda0624da5c4f4 = $(`<div id="html_4e77505d0bc798c29ceda0624da5c4f4" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; line-height:1.4'>             <b style="font-size:16px; color:orange">Koordinatavvikelse (>25 m)</b><br><br>              <b>Namn:</b> Kvarnholmsparken<br>             <b>PKID:</b> 76603<br>             <b>Adress:</b> Mjölnarvägen 32<br>             <b>Länk:</b> <a href="https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/" target="_blank">https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</a><br>              <b>Lokala koordinater:</b><br>             Lat: 59.316955<br>             Lon: 18.144974<br><br>                      <hr>             <b>Wikidata-match:</b><br>             Label: Kvarnholmen utegym<br>             QID: <a href="https://www.wikidata.org/wiki/Q107400751" target="_blank">Q107400751</a><br>             Lat: 59.31683<br>             Lon: 18.1447<br>              <b>Avstånd lokal ↔ Wikidata:</b> 41.0 m<br><br>              <b>Öppna kartor:</b><br>             <a target="_blank" href="https://www.google.com/maps?q=59.31695529163655,18.144974148637314">Google Maps (lokal)</a><br>             <a target="_blank" href="https://www.openstreetmap.org/?mlat=59.31695529163655&mlon=18.144974148637314#map=17/59.31695529163655/18.144974148637314">                 OpenStreetMap (lokal)             </a><br>             <a target="_blank" href="https://www.google.com/maps?q=59.31683,18.1447">                 Google Maps (Wikidata)             </a><br>             <a target="_blank"                 href="https://www.openstreetmap.org/?mlat=59.31683&mlon=18.1447#map=17/59.31683/18.1447">                OpenStreetMap (Wikidata)             </a><br>             </div>             </div>`)[0];
+                popup_de403a0a0f81af410ee6c3d6e402af37.setContent(html_4e77505d0bc798c29ceda0624da5c4f4);
+            
+        
+
+        marker_6a548f822bb8670677a9f0fdcc65b0c7.bindPopup(popup_de403a0a0f81af410ee6c3d6e402af37)
+        ;
+
+        
+    
+    
+                marker_6a548f822bb8670677a9f0fdcc65b0c7.setIcon(icon_311bcf43f3e07f53925b8d4cb86997ef);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_25823baf1aeab1cd8426a7ce844f7050);
+        
+</script>
+</html>
+            </div>   
+</div>
+<p></p>
+<div class="section">
+    <h2>Datasetinformation</h2>
+    <p><strong>Antal rader:</strong> 18</p>
+    <p><strong>CRS:</strong> EPSG:4326</p>
+    <p><strong>Kolumner:</strong> namn, nummer, kommundel, ansvar_skotsel, pkid, ansvar, atgardstyp, typ, area, etikett, inlagd_den, andrad_den, lank, Renoverad, Longitud, Latitud, Adresspunkt, geometry</p>
+</div>
+
+<div class="section">
+    <h2>Förhandsgranskning (20 första raderna)</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>namn</th>
+      <th>nummer</th>
+      <th>kommundel</th>
+      <th>ansvar_skotsel</th>
+      <th>pkid</th>
+      <th>ansvar</th>
+      <th>atgardstyp</th>
+      <th>typ</th>
+      <th>area</th>
+      <th>etikett</th>
+      <th>inlagd_den</th>
+      <th>andrad_den</th>
+      <th>lank</th>
+      <th>Renoverad</th>
+      <th>Longitud</th>
+      <th>Latitud</th>
+      <th>Adresspunkt</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Nyckelviken</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76489</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>475.908099</td>
+      <td>GYM</td>
+      <td>2022-11-01</td>
+      <td>2021-05-31</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Nyckelviksvägen</td>
+      <td>POINT (18.17995 59.31783)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Velamsund</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76491</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>625.345713</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Velamsundsvägen 33</td>
+      <td>POINT (18.32001 59.34672)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Hellasgården</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76602</td>
+      <td>Stockholm</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>725.504116</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-10-26</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.15909 59.28984)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sickla strand</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76448</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>52.616543</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sickla strand 25</td>
+      <td>POINT (18.1216 59.30231)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Hedvigslund</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76422</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>77.625551</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Anemonvägen 38</td>
+      <td>POINT (18.18702 59.24968)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Gröna dalen, Fisksätra</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>79873</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>505.436980</td>
+      <td>GYM</td>
+      <td>2022-06-15</td>
+      <td>2023-02-08</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Gröna dalen</td>
+      <td>POINT (18.26252 59.29045)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Sarvträsk, Orminge</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76426</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>69.946158</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sandövägen 4</td>
+      <td>POINT (18.26007 59.32987)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Tattby, nära Samskolan</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76427</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>331.896466</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Samskolevägen 6</td>
+      <td>POINT (18.27991 59.27779)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Kocktorpssjön</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77010</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>702.086429</td>
+      <td>GYM</td>
+      <td>2019-06-27</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Skivlingevägen 24</td>
+      <td>POINT (18.25051 59.31253)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Fisksätra IP</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77006</td>
+      <td>idrott</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>130.056814</td>
+      <td>GYM</td>
+      <td>2019-06-27</td>
+      <td>2022-12-09</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.25377 59.29458)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Krokhöjden</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76480</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>447.726559</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Arnövägen 15</td>
+      <td>POINT (18.24117 59.32945)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Långsjön</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76577</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>485.488531</td>
+      <td>GYM</td>
+      <td>2018-11-05</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Bävervägen 2</td>
+      <td>POINT (18.19367 59.30732)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Kvarnholmsparken</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76603</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>213.157034</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Mjölnarvägen 32</td>
+      <td>POINT (18.14497 59.31696)</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Rudsjöparkens utegym</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77078</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>95.615831</td>
+      <td>GYM</td>
+      <td>2019-07-08</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rudsjövägen 4</td>
+      <td>POINT (18.20606 59.32441)</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Älta IP</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76604</td>
+      <td>idrott</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>353.746584</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-12-09</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.17708 59.26334)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Ältadalen</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77689</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>1594.724594</td>
+      <td>GYM</td>
+      <td>2020-04-24</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Storkällansväg</td>
+      <td>POINT (18.20483 59.25428)</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Henriksdalsberget</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>78164</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>565.465656</td>
+      <td>GYM</td>
+      <td>2020-10-05</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Henriksdalsringen 8</td>
+      <td>POINT (18.11345 59.31068)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Tollare</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>78866</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>236.293326</td>
+      <td>GYM</td>
+      <td>2021-11-12</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hedenströmsväg 11</td>
+      <td>POINT (18.23518 59.30297)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
