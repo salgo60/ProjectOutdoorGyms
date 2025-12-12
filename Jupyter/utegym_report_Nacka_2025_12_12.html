@@ -17,18 +17,14 @@
         .section {
             margin-bottom: 30px;
         }
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        .map-row {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
         }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 8px;
-        }
-        th {
-            background-color: #f0f0f0;
+        .map-box {
+            width: 320px;   /* karta + marginal */
+            height: auto;
         }
     </style>
 </head>
@@ -36,10 +32,15 @@
 
 <h1>Utegymrapport</h1>
 <p><strong>Issue:</strong> <a href="https://github.com/salgo60/ProjectOutdoorGyms/issues/97">#97</a></p>
-<p>Genererad: <strong>2025-12-12 14:04:46</strong></p>
+<p>Genererad: <strong>2025-12-12 14:27:14</strong></p>
+
 <div class="section">
-    <h2>Karta över utegymmen</h2>
-    <!DOCTYPE html>
+    <h2>Kartor (lokala + Wikidata)</h2>
+
+    <div class="map-row">
+        <div class="map-box">
+            <h3>Karta 1: Nacka</h3>
+            <!DOCTYPE html>
 <html>
 <head>
     
@@ -58,10 +59,10 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_bcc76a2df7d4cc55d5562b3c70c05cf0 {
+                #map_6ed685aae32aac22941bc7b97559c8ff {
                     position: relative;
-                    width: 600.0px;
-                    height: 600.0px;
+                    width: 400.0px;
+                    height: 400.0px;
                     left: 0.0%;
                     top: 0.0%;
                 }
@@ -95,14 +96,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_bcc76a2df7d4cc55d5562b3c70c05cf0" ></div>
+            <div class="folium-map" id="map_6ed685aae32aac22941bc7b97559c8ff" ></div>
         
 </body>
 <script>
     
     
-            var map_bcc76a2df7d4cc55d5562b3c70c05cf0 = L.map(
-                "map_bcc76a2df7d4cc55d5562b3c70c05cf0",
+            var map_6ed685aae32aac22941bc7b97559c8ff = L.map(
+                "map_6ed685aae32aac22941bc7b97559c8ff",
                 {
                     center: [59.301166729378046, 18.21060334446462],
                     crs: L.CRS.EPSG3857,
@@ -119,7 +120,7 @@
 
         
     
-            var tile_layer_59aac49fdf9ac718a23e32cf84042d7c = L.tileLayer(
+            var tile_layer_79f17a9a9763a9849aff06c709a5c157 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -136,17 +137,17 @@
             );
         
     
-            tile_layer_59aac49fdf9ac718a23e32cf84042d7c.addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            tile_layer_79f17a9a9763a9849aff06c709a5c157.addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var marker_c1d2f55e5d9e1d2e09408effa7d04941 = L.marker(
+            var marker_9f916dbe55939efbeb82b05da805608f = L.marker(
                 [59.31783292473409, 18.179951733568213],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_9ba197970ffdfef4d2217542224b0a03 = L.AwesomeMarkers.icon(
+            var icon_591375804d4305461b2a5d4cf6a5eba5 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -157,34 +158,34 @@
             );
         
     
-        var popup_671db12b051750ade2f1005252181eea = L.popup({
+        var popup_23a3faed3d4c351fa344f0d56d6feb90 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3640429c0b642e13f0df98d4d68c2c89 = $(`<div id="html_3640429c0b642e13f0df98d4d68c2c89" style="width: 100.0%; height: 100.0%;">Nyckelviken</div>`)[0];
-                popup_671db12b051750ade2f1005252181eea.setContent(html_3640429c0b642e13f0df98d4d68c2c89);
+                var html_8af35851a04f8dbcac7186af2e414c0b = $(`<div id="html_8af35851a04f8dbcac7186af2e414c0b" style="width: 100.0%; height: 100.0%;">Lokalt utegym 0</div>`)[0];
+                popup_23a3faed3d4c351fa344f0d56d6feb90.setContent(html_8af35851a04f8dbcac7186af2e414c0b);
             
         
 
-        marker_c1d2f55e5d9e1d2e09408effa7d04941.bindPopup(popup_671db12b051750ade2f1005252181eea)
+        marker_9f916dbe55939efbeb82b05da805608f.bindPopup(popup_23a3faed3d4c351fa344f0d56d6feb90)
         ;
 
         
     
     
-                marker_c1d2f55e5d9e1d2e09408effa7d04941.setIcon(icon_9ba197970ffdfef4d2217542224b0a03);
+                marker_9f916dbe55939efbeb82b05da805608f.setIcon(icon_591375804d4305461b2a5d4cf6a5eba5);
             
     
-            var marker_327858b84ac8fdc3f38bac57237e7a18 = L.marker(
+            var marker_d184a3d24ae2548aae9c43ad28d62a7c = L.marker(
                 [59.34671701443543, 18.32000767459512],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_410c403cdf333d2c47cabc67323fc969 = L.AwesomeMarkers.icon(
+            var icon_4b5b85faaf175eaff27d07188280ba09 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -195,34 +196,34 @@
             );
         
     
-        var popup_1c5c196fec5804c0a4d2e9a94b8e053d = L.popup({
+        var popup_d43149617fad04c634485a1137b8be74 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_625bcc1cf0eb8e1799e52b6ae7178676 = $(`<div id="html_625bcc1cf0eb8e1799e52b6ae7178676" style="width: 100.0%; height: 100.0%;">Velamsund</div>`)[0];
-                popup_1c5c196fec5804c0a4d2e9a94b8e053d.setContent(html_625bcc1cf0eb8e1799e52b6ae7178676);
+                var html_9e4248ba287d26a023ab74ed0d143e1a = $(`<div id="html_9e4248ba287d26a023ab74ed0d143e1a" style="width: 100.0%; height: 100.0%;">Lokalt utegym 1</div>`)[0];
+                popup_d43149617fad04c634485a1137b8be74.setContent(html_9e4248ba287d26a023ab74ed0d143e1a);
             
         
 
-        marker_327858b84ac8fdc3f38bac57237e7a18.bindPopup(popup_1c5c196fec5804c0a4d2e9a94b8e053d)
+        marker_d184a3d24ae2548aae9c43ad28d62a7c.bindPopup(popup_d43149617fad04c634485a1137b8be74)
         ;
 
         
     
     
-                marker_327858b84ac8fdc3f38bac57237e7a18.setIcon(icon_410c403cdf333d2c47cabc67323fc969);
+                marker_d184a3d24ae2548aae9c43ad28d62a7c.setIcon(icon_4b5b85faaf175eaff27d07188280ba09);
             
     
-            var marker_ce3eb8aac4a581b1826352535172b9ec = L.marker(
+            var marker_6c35b4a28bf748e581bf3ed3d45e23cd = L.marker(
                 [59.28983945430401, 18.159092033006402],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_7d570abe19e6f0d98764c4ff608b936f = L.AwesomeMarkers.icon(
+            var icon_6f603f31d7654db35d387c4e9f86ae47 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -233,34 +234,34 @@
             );
         
     
-        var popup_b2ebba8ce4ca17c8de56f18af61b74cf = L.popup({
+        var popup_04539e2682a90ea206b258a754825e13 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8d110d50dd9e94f6180cb82c1b875629 = $(`<div id="html_8d110d50dd9e94f6180cb82c1b875629" style="width: 100.0%; height: 100.0%;">Hellasgården</div>`)[0];
-                popup_b2ebba8ce4ca17c8de56f18af61b74cf.setContent(html_8d110d50dd9e94f6180cb82c1b875629);
+                var html_7b51c72fa783b9c0d2c37a0bbbc49935 = $(`<div id="html_7b51c72fa783b9c0d2c37a0bbbc49935" style="width: 100.0%; height: 100.0%;">Lokalt utegym 2</div>`)[0];
+                popup_04539e2682a90ea206b258a754825e13.setContent(html_7b51c72fa783b9c0d2c37a0bbbc49935);
             
         
 
-        marker_ce3eb8aac4a581b1826352535172b9ec.bindPopup(popup_b2ebba8ce4ca17c8de56f18af61b74cf)
+        marker_6c35b4a28bf748e581bf3ed3d45e23cd.bindPopup(popup_04539e2682a90ea206b258a754825e13)
         ;
 
         
     
     
-                marker_ce3eb8aac4a581b1826352535172b9ec.setIcon(icon_7d570abe19e6f0d98764c4ff608b936f);
+                marker_6c35b4a28bf748e581bf3ed3d45e23cd.setIcon(icon_6f603f31d7654db35d387c4e9f86ae47);
             
     
-            var marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6 = L.marker(
+            var marker_06ac272b8f45543743d6a70242bbf52c = L.marker(
                 [59.302306121114626, 18.121600464589374],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_8889188e09342605c0b8be65c246ff43 = L.AwesomeMarkers.icon(
+            var icon_e51429825147296b75fcc8da50dbcbef = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -271,34 +272,34 @@
             );
         
     
-        var popup_6214dc7f35aaed7f22f4d639496b881f = L.popup({
+        var popup_8c7f80c94961d6ab1e5a11fdc237601a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_92143a19add97b9822d947404ed6dd97 = $(`<div id="html_92143a19add97b9822d947404ed6dd97" style="width: 100.0%; height: 100.0%;">Sickla strand</div>`)[0];
-                popup_6214dc7f35aaed7f22f4d639496b881f.setContent(html_92143a19add97b9822d947404ed6dd97);
+                var html_27a2689a773689c651f7886f4a0081ee = $(`<div id="html_27a2689a773689c651f7886f4a0081ee" style="width: 100.0%; height: 100.0%;">Lokalt utegym 3</div>`)[0];
+                popup_8c7f80c94961d6ab1e5a11fdc237601a.setContent(html_27a2689a773689c651f7886f4a0081ee);
             
         
 
-        marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6.bindPopup(popup_6214dc7f35aaed7f22f4d639496b881f)
+        marker_06ac272b8f45543743d6a70242bbf52c.bindPopup(popup_8c7f80c94961d6ab1e5a11fdc237601a)
         ;
 
         
     
     
-                marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6.setIcon(icon_8889188e09342605c0b8be65c246ff43);
+                marker_06ac272b8f45543743d6a70242bbf52c.setIcon(icon_e51429825147296b75fcc8da50dbcbef);
             
     
-            var marker_38d431f9adb6b5a695a4af84c3d04b26 = L.marker(
+            var marker_409d4ac2d00a975e8403ab323b49d6f4 = L.marker(
                 [59.24967749631198, 18.187016747287252],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_864bb07f3c427ac76555325c308e8a1f = L.AwesomeMarkers.icon(
+            var icon_ea188d29265f415bc6ae9b92ce932fdd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -309,34 +310,34 @@
             );
         
     
-        var popup_246e906c9474da291506b7ef66550f25 = L.popup({
+        var popup_9bb4f64325fcdd375c47af145ea96a4a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_77599c3d0cda59ee71cc9a117c13ab81 = $(`<div id="html_77599c3d0cda59ee71cc9a117c13ab81" style="width: 100.0%; height: 100.0%;">Hedvigslund</div>`)[0];
-                popup_246e906c9474da291506b7ef66550f25.setContent(html_77599c3d0cda59ee71cc9a117c13ab81);
+                var html_ce80a0a59ac64e596917588b69bda270 = $(`<div id="html_ce80a0a59ac64e596917588b69bda270" style="width: 100.0%; height: 100.0%;">Lokalt utegym 4</div>`)[0];
+                popup_9bb4f64325fcdd375c47af145ea96a4a.setContent(html_ce80a0a59ac64e596917588b69bda270);
             
         
 
-        marker_38d431f9adb6b5a695a4af84c3d04b26.bindPopup(popup_246e906c9474da291506b7ef66550f25)
+        marker_409d4ac2d00a975e8403ab323b49d6f4.bindPopup(popup_9bb4f64325fcdd375c47af145ea96a4a)
         ;
 
         
     
     
-                marker_38d431f9adb6b5a695a4af84c3d04b26.setIcon(icon_864bb07f3c427ac76555325c308e8a1f);
+                marker_409d4ac2d00a975e8403ab323b49d6f4.setIcon(icon_ea188d29265f415bc6ae9b92ce932fdd);
             
     
-            var marker_2c6cf1df319f037d10a773eb7f10823f = L.marker(
+            var marker_9bd694baf10ac12d0657ad0eb09dbc64 = L.marker(
                 [59.290450469625384, 18.26251919670847],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_9b5f65030e88d4d3101e38da0558e19e = L.AwesomeMarkers.icon(
+            var icon_c54c594ba5fd90ea773aca5c71826186 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -347,34 +348,34 @@
             );
         
     
-        var popup_e61e1769a6c30a9e1d0ed60073f4bd49 = L.popup({
+        var popup_1628ad60adcf29e390c6bfe7055d3a21 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_fb6208341434cf6b8fb42fc3027aee86 = $(`<div id="html_fb6208341434cf6b8fb42fc3027aee86" style="width: 100.0%; height: 100.0%;">Gröna dalen, Fisksätra</div>`)[0];
-                popup_e61e1769a6c30a9e1d0ed60073f4bd49.setContent(html_fb6208341434cf6b8fb42fc3027aee86);
+                var html_c932cc336da5427356fd18a6148497a2 = $(`<div id="html_c932cc336da5427356fd18a6148497a2" style="width: 100.0%; height: 100.0%;">Lokalt utegym 5</div>`)[0];
+                popup_1628ad60adcf29e390c6bfe7055d3a21.setContent(html_c932cc336da5427356fd18a6148497a2);
             
         
 
-        marker_2c6cf1df319f037d10a773eb7f10823f.bindPopup(popup_e61e1769a6c30a9e1d0ed60073f4bd49)
+        marker_9bd694baf10ac12d0657ad0eb09dbc64.bindPopup(popup_1628ad60adcf29e390c6bfe7055d3a21)
         ;
 
         
     
     
-                marker_2c6cf1df319f037d10a773eb7f10823f.setIcon(icon_9b5f65030e88d4d3101e38da0558e19e);
+                marker_9bd694baf10ac12d0657ad0eb09dbc64.setIcon(icon_c54c594ba5fd90ea773aca5c71826186);
             
     
-            var marker_0e864f05045d7e10cfd8501155d227e5 = L.marker(
+            var marker_755562a38aaa8d585788f6a726ad936a = L.marker(
                 [59.329865723598736, 18.260073075618767],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_c84cd9812e44622070a5ac87eaeca320 = L.AwesomeMarkers.icon(
+            var icon_89da93e3cb4919a7864dabc93e73b3b7 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -385,34 +386,34 @@
             );
         
     
-        var popup_9d2b7cc563aabc2a19f2f6c529443e17 = L.popup({
+        var popup_10cce525681fce544f19aeac28c8f8d7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_73a59ed7ad656ce8b60b62f66c13ac98 = $(`<div id="html_73a59ed7ad656ce8b60b62f66c13ac98" style="width: 100.0%; height: 100.0%;">Sarvträsk, Orminge</div>`)[0];
-                popup_9d2b7cc563aabc2a19f2f6c529443e17.setContent(html_73a59ed7ad656ce8b60b62f66c13ac98);
+                var html_575f54b96989210d6310f298a34abb9c = $(`<div id="html_575f54b96989210d6310f298a34abb9c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 6</div>`)[0];
+                popup_10cce525681fce544f19aeac28c8f8d7.setContent(html_575f54b96989210d6310f298a34abb9c);
             
         
 
-        marker_0e864f05045d7e10cfd8501155d227e5.bindPopup(popup_9d2b7cc563aabc2a19f2f6c529443e17)
+        marker_755562a38aaa8d585788f6a726ad936a.bindPopup(popup_10cce525681fce544f19aeac28c8f8d7)
         ;
 
         
     
     
-                marker_0e864f05045d7e10cfd8501155d227e5.setIcon(icon_c84cd9812e44622070a5ac87eaeca320);
+                marker_755562a38aaa8d585788f6a726ad936a.setIcon(icon_89da93e3cb4919a7864dabc93e73b3b7);
             
     
-            var marker_0002206238f44e870f400b25f9512451 = L.marker(
+            var marker_5a7b86bd3825d99172dbb64da03a37c3 = L.marker(
                 [59.27779320043651, 18.279911843061356],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_8062d3fc5bd57b372c7dc6399f43e567 = L.AwesomeMarkers.icon(
+            var icon_5f04729eecca59d0e60175d8af06caf5 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -423,34 +424,34 @@
             );
         
     
-        var popup_5fd00bbd3a046d1697f208df0e039de4 = L.popup({
+        var popup_67a3482e1a3d832cd87ab386e77f9e0b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_500edb6fe7e4f1a4f7c37d79d3b72267 = $(`<div id="html_500edb6fe7e4f1a4f7c37d79d3b72267" style="width: 100.0%; height: 100.0%;">Tattby, nära Samskolan</div>`)[0];
-                popup_5fd00bbd3a046d1697f208df0e039de4.setContent(html_500edb6fe7e4f1a4f7c37d79d3b72267);
+                var html_3320f0fb316635a3cf912be339d01624 = $(`<div id="html_3320f0fb316635a3cf912be339d01624" style="width: 100.0%; height: 100.0%;">Lokalt utegym 7</div>`)[0];
+                popup_67a3482e1a3d832cd87ab386e77f9e0b.setContent(html_3320f0fb316635a3cf912be339d01624);
             
         
 
-        marker_0002206238f44e870f400b25f9512451.bindPopup(popup_5fd00bbd3a046d1697f208df0e039de4)
+        marker_5a7b86bd3825d99172dbb64da03a37c3.bindPopup(popup_67a3482e1a3d832cd87ab386e77f9e0b)
         ;
 
         
     
     
-                marker_0002206238f44e870f400b25f9512451.setIcon(icon_8062d3fc5bd57b372c7dc6399f43e567);
+                marker_5a7b86bd3825d99172dbb64da03a37c3.setIcon(icon_5f04729eecca59d0e60175d8af06caf5);
             
     
-            var marker_62c653d5c151e0853b79de5e0b326b13 = L.marker(
+            var marker_bcc75db30cc349157fb6c3c7ef632394 = L.marker(
                 [59.31252999304202, 18.250508376983724],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_d68f8b01f74ff566eb5b403b9684de53 = L.AwesomeMarkers.icon(
+            var icon_1cc14a5011bef444dc2a4f583326227a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -461,34 +462,34 @@
             );
         
     
-        var popup_f097d4879d2cf76609256da1c1294282 = L.popup({
+        var popup_2c90de6f8bfb456a13150346b4f279e3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2295c72701419f7edfb6330b9f858a43 = $(`<div id="html_2295c72701419f7edfb6330b9f858a43" style="width: 100.0%; height: 100.0%;">Kocktorpssjön</div>`)[0];
-                popup_f097d4879d2cf76609256da1c1294282.setContent(html_2295c72701419f7edfb6330b9f858a43);
+                var html_27a3dcc2c625611dfdc227a2a35acfe0 = $(`<div id="html_27a3dcc2c625611dfdc227a2a35acfe0" style="width: 100.0%; height: 100.0%;">Lokalt utegym 8</div>`)[0];
+                popup_2c90de6f8bfb456a13150346b4f279e3.setContent(html_27a3dcc2c625611dfdc227a2a35acfe0);
             
         
 
-        marker_62c653d5c151e0853b79de5e0b326b13.bindPopup(popup_f097d4879d2cf76609256da1c1294282)
+        marker_bcc75db30cc349157fb6c3c7ef632394.bindPopup(popup_2c90de6f8bfb456a13150346b4f279e3)
         ;
 
         
     
     
-                marker_62c653d5c151e0853b79de5e0b326b13.setIcon(icon_d68f8b01f74ff566eb5b403b9684de53);
+                marker_bcc75db30cc349157fb6c3c7ef632394.setIcon(icon_1cc14a5011bef444dc2a4f583326227a);
             
     
-            var marker_61862a986d347a5995d7f653202ad64c = L.marker(
+            var marker_2e7bab3aec22b590f711569245822086 = L.marker(
                 [59.294583896234734, 18.253774019952814],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_b511d8c9dc40b76b3a91d54187e89321 = L.AwesomeMarkers.icon(
+            var icon_44d49fa7739600fdf74a0188a2208ccd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -499,34 +500,34 @@
             );
         
     
-        var popup_29b13eb74a54b20adf4d11f307cc4a02 = L.popup({
+        var popup_7c2391d29a35784cbdc95285de5236cf = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_67087ca69b81c00e6322b52455061002 = $(`<div id="html_67087ca69b81c00e6322b52455061002" style="width: 100.0%; height: 100.0%;">Fisksätra IP</div>`)[0];
-                popup_29b13eb74a54b20adf4d11f307cc4a02.setContent(html_67087ca69b81c00e6322b52455061002);
+                var html_d22e490225067df6c58e3e364c2a6dfd = $(`<div id="html_d22e490225067df6c58e3e364c2a6dfd" style="width: 100.0%; height: 100.0%;">Lokalt utegym 9</div>`)[0];
+                popup_7c2391d29a35784cbdc95285de5236cf.setContent(html_d22e490225067df6c58e3e364c2a6dfd);
             
         
 
-        marker_61862a986d347a5995d7f653202ad64c.bindPopup(popup_29b13eb74a54b20adf4d11f307cc4a02)
+        marker_2e7bab3aec22b590f711569245822086.bindPopup(popup_7c2391d29a35784cbdc95285de5236cf)
         ;
 
         
     
     
-                marker_61862a986d347a5995d7f653202ad64c.setIcon(icon_b511d8c9dc40b76b3a91d54187e89321);
+                marker_2e7bab3aec22b590f711569245822086.setIcon(icon_44d49fa7739600fdf74a0188a2208ccd);
             
     
-            var marker_8c90e2b326d5dd3c425d87fe7aa926bf = L.marker(
+            var marker_05e69046b2202241499896fc31aa4357 = L.marker(
                 [59.329448932059286, 18.241169890979915],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_a3d74c4719c49e6227343f10e0e5b6de = L.AwesomeMarkers.icon(
+            var icon_36b945659f1da4a25be29b10f7aa2ecc = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -537,34 +538,34 @@
             );
         
     
-        var popup_f2976d6ddf0a726ff01c7002be2cfd3a = L.popup({
+        var popup_ca7bb7bb561fe02edc4eb5ba40aa3f61 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_097178e3dffefce727f55989b358e91e = $(`<div id="html_097178e3dffefce727f55989b358e91e" style="width: 100.0%; height: 100.0%;">Krokhöjden</div>`)[0];
-                popup_f2976d6ddf0a726ff01c7002be2cfd3a.setContent(html_097178e3dffefce727f55989b358e91e);
+                var html_dfc9e420cff8028f657de46f1814d8bb = $(`<div id="html_dfc9e420cff8028f657de46f1814d8bb" style="width: 100.0%; height: 100.0%;">Lokalt utegym 10</div>`)[0];
+                popup_ca7bb7bb561fe02edc4eb5ba40aa3f61.setContent(html_dfc9e420cff8028f657de46f1814d8bb);
             
         
 
-        marker_8c90e2b326d5dd3c425d87fe7aa926bf.bindPopup(popup_f2976d6ddf0a726ff01c7002be2cfd3a)
+        marker_05e69046b2202241499896fc31aa4357.bindPopup(popup_ca7bb7bb561fe02edc4eb5ba40aa3f61)
         ;
 
         
     
     
-                marker_8c90e2b326d5dd3c425d87fe7aa926bf.setIcon(icon_a3d74c4719c49e6227343f10e0e5b6de);
+                marker_05e69046b2202241499896fc31aa4357.setIcon(icon_36b945659f1da4a25be29b10f7aa2ecc);
             
     
-            var marker_6c15dd4204978eac4c9bea09e41a7629 = L.marker(
+            var marker_268a6810a1a26061e05381d80091f4f8 = L.marker(
                 [59.307321401730285, 18.193666546914883],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_4f6bd63b986af9c16859f7da5f432a68 = L.AwesomeMarkers.icon(
+            var icon_117e2bca3019e09991728180389c30e2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -575,34 +576,34 @@
             );
         
     
-        var popup_5eb81839d7bd43a882e43c225b38ca57 = L.popup({
+        var popup_cf4f1eb3338cc252e60a205ce9f5ecb5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e696f73d1a47fde21eef1f4fe3b0fa76 = $(`<div id="html_e696f73d1a47fde21eef1f4fe3b0fa76" style="width: 100.0%; height: 100.0%;">Långsjön</div>`)[0];
-                popup_5eb81839d7bd43a882e43c225b38ca57.setContent(html_e696f73d1a47fde21eef1f4fe3b0fa76);
+                var html_8bc319c83a1141299f97bb191f5db83c = $(`<div id="html_8bc319c83a1141299f97bb191f5db83c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 11</div>`)[0];
+                popup_cf4f1eb3338cc252e60a205ce9f5ecb5.setContent(html_8bc319c83a1141299f97bb191f5db83c);
             
         
 
-        marker_6c15dd4204978eac4c9bea09e41a7629.bindPopup(popup_5eb81839d7bd43a882e43c225b38ca57)
+        marker_268a6810a1a26061e05381d80091f4f8.bindPopup(popup_cf4f1eb3338cc252e60a205ce9f5ecb5)
         ;
 
         
     
     
-                marker_6c15dd4204978eac4c9bea09e41a7629.setIcon(icon_4f6bd63b986af9c16859f7da5f432a68);
+                marker_268a6810a1a26061e05381d80091f4f8.setIcon(icon_117e2bca3019e09991728180389c30e2);
             
     
-            var marker_30cde130ec5772a5f1679a355e725b03 = L.marker(
+            var marker_46e248b78507c946ab8f4b4abdd25e94 = L.marker(
                 [59.31695529163657, 18.144974148637314],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_c2f2e305c47f639fb873abf1a67b47b1 = L.AwesomeMarkers.icon(
+            var icon_c36a69033d0b0f70dee45fab3adfe2ef = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -613,34 +614,34 @@
             );
         
     
-        var popup_dcbdab6522e4bee045c1230b6e37c4ef = L.popup({
+        var popup_05238a5957d926afa6bbe58e3dfa0dae = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9fc0374f6729b49649c582d633e7a321 = $(`<div id="html_9fc0374f6729b49649c582d633e7a321" style="width: 100.0%; height: 100.0%;">Kvarnholmsparken</div>`)[0];
-                popup_dcbdab6522e4bee045c1230b6e37c4ef.setContent(html_9fc0374f6729b49649c582d633e7a321);
+                var html_93ac4499eb74a7e7edb7b3639f07869c = $(`<div id="html_93ac4499eb74a7e7edb7b3639f07869c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 12</div>`)[0];
+                popup_05238a5957d926afa6bbe58e3dfa0dae.setContent(html_93ac4499eb74a7e7edb7b3639f07869c);
             
         
 
-        marker_30cde130ec5772a5f1679a355e725b03.bindPopup(popup_dcbdab6522e4bee045c1230b6e37c4ef)
+        marker_46e248b78507c946ab8f4b4abdd25e94.bindPopup(popup_05238a5957d926afa6bbe58e3dfa0dae)
         ;
 
         
     
     
-                marker_30cde130ec5772a5f1679a355e725b03.setIcon(icon_c2f2e305c47f639fb873abf1a67b47b1);
+                marker_46e248b78507c946ab8f4b4abdd25e94.setIcon(icon_c36a69033d0b0f70dee45fab3adfe2ef);
             
     
-            var marker_594053b7cb1e10b51ac6ae0880ac0546 = L.marker(
+            var marker_6ffe6be629b5480aa7bce495f0620c3f = L.marker(
                 [59.32441049957718, 18.20606340624574],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_ce516ac7efaf06159039326a5fd8bc0b = L.AwesomeMarkers.icon(
+            var icon_536ad134f519645071a3f67967eb2fdf = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -651,34 +652,34 @@
             );
         
     
-        var popup_a7fc3e37d6a22129705dec56b22639c0 = L.popup({
+        var popup_d6a77e2096845db32773fdcca5357821 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_61d1c1c269bbe00382f87862c795bc96 = $(`<div id="html_61d1c1c269bbe00382f87862c795bc96" style="width: 100.0%; height: 100.0%;">Rudsjöparkens utegym</div>`)[0];
-                popup_a7fc3e37d6a22129705dec56b22639c0.setContent(html_61d1c1c269bbe00382f87862c795bc96);
+                var html_474b8a5b519d6a399072b4dca2f2456d = $(`<div id="html_474b8a5b519d6a399072b4dca2f2456d" style="width: 100.0%; height: 100.0%;">Lokalt utegym 13</div>`)[0];
+                popup_d6a77e2096845db32773fdcca5357821.setContent(html_474b8a5b519d6a399072b4dca2f2456d);
             
         
 
-        marker_594053b7cb1e10b51ac6ae0880ac0546.bindPopup(popup_a7fc3e37d6a22129705dec56b22639c0)
+        marker_6ffe6be629b5480aa7bce495f0620c3f.bindPopup(popup_d6a77e2096845db32773fdcca5357821)
         ;
 
         
     
     
-                marker_594053b7cb1e10b51ac6ae0880ac0546.setIcon(icon_ce516ac7efaf06159039326a5fd8bc0b);
+                marker_6ffe6be629b5480aa7bce495f0620c3f.setIcon(icon_536ad134f519645071a3f67967eb2fdf);
             
     
-            var marker_7c249f5c263f9ea55328c2e888c59add = L.marker(
+            var marker_25c9d64c6317fee3e7ab2298e8a4e7b0 = L.marker(
                 [59.26334218545299, 18.17708332637994],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_58eb3ff85e16cbf36cc59dd548ae2ce2 = L.AwesomeMarkers.icon(
+            var icon_84bcbe05e3d162cd10502dfa8da66d66 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -689,34 +690,34 @@
             );
         
     
-        var popup_89dfc47fa3c7b3e0e02a12a0b921cf66 = L.popup({
+        var popup_9dab26a34b49171d62a12824b52fd533 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_903f2c4baa66073a567e8b285323ee59 = $(`<div id="html_903f2c4baa66073a567e8b285323ee59" style="width: 100.0%; height: 100.0%;">Älta IP</div>`)[0];
-                popup_89dfc47fa3c7b3e0e02a12a0b921cf66.setContent(html_903f2c4baa66073a567e8b285323ee59);
+                var html_cc4ce8c4a4403907c5acab1a114882b7 = $(`<div id="html_cc4ce8c4a4403907c5acab1a114882b7" style="width: 100.0%; height: 100.0%;">Lokalt utegym 14</div>`)[0];
+                popup_9dab26a34b49171d62a12824b52fd533.setContent(html_cc4ce8c4a4403907c5acab1a114882b7);
             
         
 
-        marker_7c249f5c263f9ea55328c2e888c59add.bindPopup(popup_89dfc47fa3c7b3e0e02a12a0b921cf66)
+        marker_25c9d64c6317fee3e7ab2298e8a4e7b0.bindPopup(popup_9dab26a34b49171d62a12824b52fd533)
         ;
 
         
     
     
-                marker_7c249f5c263f9ea55328c2e888c59add.setIcon(icon_58eb3ff85e16cbf36cc59dd548ae2ce2);
+                marker_25c9d64c6317fee3e7ab2298e8a4e7b0.setIcon(icon_84bcbe05e3d162cd10502dfa8da66d66);
             
     
-            var marker_d5cedbd6706f0f0000200d703c0d7c89 = L.marker(
+            var marker_55b8803ee1109d6ab0eb37018d4b7850 = L.marker(
                 [59.25427558695531, 18.20482608809121],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_10b520b1ed7a7605743530572932ec8a = L.AwesomeMarkers.icon(
+            var icon_ceb6a92a6a7fed2c4bafd8dd1a8ff5bf = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -727,34 +728,34 @@
             );
         
     
-        var popup_90bc42186a946a427c0b7277f317c4cf = L.popup({
+        var popup_7d82e8f818667a4b4d18f27af2ffe300 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_89ce48a2263a1cf49f8d89e6c581e9d0 = $(`<div id="html_89ce48a2263a1cf49f8d89e6c581e9d0" style="width: 100.0%; height: 100.0%;">Ältadalen</div>`)[0];
-                popup_90bc42186a946a427c0b7277f317c4cf.setContent(html_89ce48a2263a1cf49f8d89e6c581e9d0);
+                var html_3515f5e93a86da6f5cba3a00ef9354fa = $(`<div id="html_3515f5e93a86da6f5cba3a00ef9354fa" style="width: 100.0%; height: 100.0%;">Lokalt utegym 15</div>`)[0];
+                popup_7d82e8f818667a4b4d18f27af2ffe300.setContent(html_3515f5e93a86da6f5cba3a00ef9354fa);
             
         
 
-        marker_d5cedbd6706f0f0000200d703c0d7c89.bindPopup(popup_90bc42186a946a427c0b7277f317c4cf)
+        marker_55b8803ee1109d6ab0eb37018d4b7850.bindPopup(popup_7d82e8f818667a4b4d18f27af2ffe300)
         ;
 
         
     
     
-                marker_d5cedbd6706f0f0000200d703c0d7c89.setIcon(icon_10b520b1ed7a7605743530572932ec8a);
+                marker_55b8803ee1109d6ab0eb37018d4b7850.setIcon(icon_ceb6a92a6a7fed2c4bafd8dd1a8ff5bf);
             
     
-            var marker_2cf2f9b86258c08ae85489e40b70df85 = L.marker(
+            var marker_720a5df9bc6a8b501f0bd7cdd4674472 = L.marker(
                 [59.31067975710323, 18.113446030402873],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_0280779d40b2b4555f0eba75427c8ec6 = L.AwesomeMarkers.icon(
+            var icon_3d8be16ce7626e09aec934dc47d7f83d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -765,34 +766,34 @@
             );
         
     
-        var popup_50126f2d528ded3f70939efd30937d67 = L.popup({
+        var popup_ac13eadc3f68938f2ea0c0024aac14ec = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d09e2093050d9e572cf69ab0ed84f352 = $(`<div id="html_d09e2093050d9e572cf69ab0ed84f352" style="width: 100.0%; height: 100.0%;">Henriksdalsberget</div>`)[0];
-                popup_50126f2d528ded3f70939efd30937d67.setContent(html_d09e2093050d9e572cf69ab0ed84f352);
+                var html_3e2d774c2d6d9886a96b3675230f14f4 = $(`<div id="html_3e2d774c2d6d9886a96b3675230f14f4" style="width: 100.0%; height: 100.0%;">Lokalt utegym 16</div>`)[0];
+                popup_ac13eadc3f68938f2ea0c0024aac14ec.setContent(html_3e2d774c2d6d9886a96b3675230f14f4);
             
         
 
-        marker_2cf2f9b86258c08ae85489e40b70df85.bindPopup(popup_50126f2d528ded3f70939efd30937d67)
+        marker_720a5df9bc6a8b501f0bd7cdd4674472.bindPopup(popup_ac13eadc3f68938f2ea0c0024aac14ec)
         ;
 
         
     
     
-                marker_2cf2f9b86258c08ae85489e40b70df85.setIcon(icon_0280779d40b2b4555f0eba75427c8ec6);
+                marker_720a5df9bc6a8b501f0bd7cdd4674472.setIcon(icon_3d8be16ce7626e09aec934dc47d7f83d);
             
     
-            var marker_ceaa789e2718ddba905cf8015c9596ef = L.marker(
+            var marker_8b9db183b8ab8b1b6b6996597050e2cc = L.marker(
                 [59.30297118045249, 18.235175597339833],
                 {
 }
-            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
         
     
-            var icon_7a1b5c1ca0a4af201f521f2c0c27853a = L.AwesomeMarkers.icon(
+            var icon_e937a1f2258eca53ce790b371575ff73 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -803,27 +804,1147 @@
             );
         
     
-        var popup_df5f537507f760e177ad70a55acde76e = L.popup({
+        var popup_fe4a90a60837854a282de4846ebcd620 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2688d9f2958d9a2302e4406a2ae9b2d2 = $(`<div id="html_2688d9f2958d9a2302e4406a2ae9b2d2" style="width: 100.0%; height: 100.0%;">Tollare</div>`)[0];
-                popup_df5f537507f760e177ad70a55acde76e.setContent(html_2688d9f2958d9a2302e4406a2ae9b2d2);
+                var html_ed61a303cd130c317a3465d0e982cb57 = $(`<div id="html_ed61a303cd130c317a3465d0e982cb57" style="width: 100.0%; height: 100.0%;">Lokalt utegym 17</div>`)[0];
+                popup_fe4a90a60837854a282de4846ebcd620.setContent(html_ed61a303cd130c317a3465d0e982cb57);
             
         
 
-        marker_ceaa789e2718ddba905cf8015c9596ef.bindPopup(popup_df5f537507f760e177ad70a55acde76e)
+        marker_8b9db183b8ab8b1b6b6996597050e2cc.bindPopup(popup_fe4a90a60837854a282de4846ebcd620)
         ;
 
         
     
     
-                marker_ceaa789e2718ddba905cf8015c9596ef.setIcon(icon_7a1b5c1ca0a4af201f521f2c0c27853a);
+                marker_8b9db183b8ab8b1b6b6996597050e2cc.setIcon(icon_e937a1f2258eca53ce790b371575ff73);
             
 </script>
 </html>
+        </div>
+
+        <div class="map-box">
+            <h3>Karta 2: Wikidata</h3>
+            <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e02952f01aa4cca174785b0836a3d11d {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e02952f01aa4cca174785b0836a3d11d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e02952f01aa4cca174785b0836a3d11d = L.map(
+                "map_e02952f01aa4cca174785b0836a3d11d",
+                {
+                    center: [59.30276392941177, 18.21222029411765],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6de5c53f1bac92aaedb47f5e01e736e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f6de5c53f1bac92aaedb47f5e01e736e.addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var marker_8f1fc9482f84b5e806e562ccf596548f = L.marker(
+                [59.29459, 18.25375],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_82bde2031ac489a7da5ec19c64b51714 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_829545dde5116cea8b2fbaa364b2712a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ee739cc1aa6110c8eadbeb0b38cc11e = $(`<div id="html_9ee739cc1aa6110c8eadbeb0b38cc11e" style="width: 100.0%; height: 100.0%;">Fisksätra IP utegym (Q107400635)</div>`)[0];
+                popup_829545dde5116cea8b2fbaa364b2712a.setContent(html_9ee739cc1aa6110c8eadbeb0b38cc11e);
+            
+        
+
+        marker_8f1fc9482f84b5e806e562ccf596548f.bindPopup(popup_829545dde5116cea8b2fbaa364b2712a)
+        ;
+
+        
+    
+    
+                marker_8f1fc9482f84b5e806e562ccf596548f.setIcon(icon_82bde2031ac489a7da5ec19c64b51714);
+            
+    
+            var marker_200ed31cbc3c173c63924aca6c2d1a95 = L.marker(
+                [59.24964, 18.18689],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_ccdec931729973141d2345eab419bc71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac13e90383401ddf76f84a1a9cf96999 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4ee39dc37a140bd4eaed0f8f3790015 = $(`<div id="html_f4ee39dc37a140bd4eaed0f8f3790015" style="width: 100.0%; height: 100.0%;">Hedvigslund utegym (Q107401051)</div>`)[0];
+                popup_ac13e90383401ddf76f84a1a9cf96999.setContent(html_f4ee39dc37a140bd4eaed0f8f3790015);
+            
+        
+
+        marker_200ed31cbc3c173c63924aca6c2d1a95.bindPopup(popup_ac13e90383401ddf76f84a1a9cf96999)
+        ;
+
+        
+    
+    
+                marker_200ed31cbc3c173c63924aca6c2d1a95.setIcon(icon_ccdec931729973141d2345eab419bc71);
+            
+    
+            var marker_89de46e593d9c543089d8b1e545b1731 = L.marker(
+                [59.31069, 18.11359],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_5cdb2f7b91174e125f579268ce53d4bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fead66b061143e11a68402668d70608d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b402562fc62838dacab95e384db9482a = $(`<div id="html_b402562fc62838dacab95e384db9482a" style="width: 100.0%; height: 100.0%;">Henrikdalsberget utegym (Q107400739)</div>`)[0];
+                popup_fead66b061143e11a68402668d70608d.setContent(html_b402562fc62838dacab95e384db9482a);
+            
+        
+
+        marker_89de46e593d9c543089d8b1e545b1731.bindPopup(popup_fead66b061143e11a68402668d70608d)
+        ;
+
+        
+    
+    
+                marker_89de46e593d9c543089d8b1e545b1731.setIcon(icon_5cdb2f7b91174e125f579268ce53d4bc);
+            
+    
+            var marker_8077feb9c1929641f87a68dbe61d2e53 = L.marker(
+                [59.31249, 18.25034],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_2056d153404eaafaace07f5c7f0ec597 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca26d0cc6f4baf9a6328b12012b67d3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cabc46150e408507a9683563c63af048 = $(`<div id="html_cabc46150e408507a9683563c63af048" style="width: 100.0%; height: 100.0%;">Kocktorpssjöns utegym (Q107400643)</div>`)[0];
+                popup_ca26d0cc6f4baf9a6328b12012b67d3c.setContent(html_cabc46150e408507a9683563c63af048);
+            
+        
+
+        marker_8077feb9c1929641f87a68dbe61d2e53.bindPopup(popup_ca26d0cc6f4baf9a6328b12012b67d3c)
+        ;
+
+        
+    
+    
+                marker_8077feb9c1929641f87a68dbe61d2e53.setIcon(icon_2056d153404eaafaace07f5c7f0ec597);
+            
+    
+            var marker_8f13f236f0da3201f8d13f76b5e58ccc = L.marker(
+                [59.32928, 18.24293],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_6480379215d2236ae9f0b53646a1df2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aac42f94a986a5480e50daa098893462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9749be0688cb5b68860cb259e9b5214 = $(`<div id="html_d9749be0688cb5b68860cb259e9b5214" style="width: 100.0%; height: 100.0%;">Krokhöjdens utegym (Q107400650)</div>`)[0];
+                popup_aac42f94a986a5480e50daa098893462.setContent(html_d9749be0688cb5b68860cb259e9b5214);
+            
+        
+
+        marker_8f13f236f0da3201f8d13f76b5e58ccc.bindPopup(popup_aac42f94a986a5480e50daa098893462)
+        ;
+
+        
+    
+    
+                marker_8f13f236f0da3201f8d13f76b5e58ccc.setIcon(icon_6480379215d2236ae9f0b53646a1df2d);
+            
+    
+            var marker_4c6c24fdcb02dc95a0543b8cda9dfe76 = L.marker(
+                [59.31683, 18.1447],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_ef4be2577c22e13603ab8786b28014d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6ee6a698c5de8f716b28c666de96704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8a58130b5b0d5d48550661532dfcc42 = $(`<div id="html_d8a58130b5b0d5d48550661532dfcc42" style="width: 100.0%; height: 100.0%;">Kvarnholmen utegym (Q107400751)</div>`)[0];
+                popup_a6ee6a698c5de8f716b28c666de96704.setContent(html_d8a58130b5b0d5d48550661532dfcc42);
+            
+        
+
+        marker_4c6c24fdcb02dc95a0543b8cda9dfe76.bindPopup(popup_a6ee6a698c5de8f716b28c666de96704)
+        ;
+
+        
+    
+    
+                marker_4c6c24fdcb02dc95a0543b8cda9dfe76.setIcon(icon_ef4be2577c22e13603ab8786b28014d8);
+            
+    
+            var marker_76cb3b766416d3d85d35e2b8b905496f = L.marker(
+                [59.30733, 18.19367],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_e3b11baef0cb33deda7d76bd339145c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b71b06ea24d92ce3528595819d38372f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dec2258db3668f1771e57432b1c747f = $(`<div id="html_0dec2258db3668f1771e57432b1c747f" style="width: 100.0%; height: 100.0%;">Långsjöns utegym (Q107400759)</div>`)[0];
+                popup_b71b06ea24d92ce3528595819d38372f.setContent(html_0dec2258db3668f1771e57432b1c747f);
+            
+        
+
+        marker_76cb3b766416d3d85d35e2b8b905496f.bindPopup(popup_b71b06ea24d92ce3528595819d38372f)
+        ;
+
+        
+    
+    
+                marker_76cb3b766416d3d85d35e2b8b905496f.setIcon(icon_e3b11baef0cb33deda7d76bd339145c5);
+            
+    
+            var marker_61266f39339d109a55479bd6b5eb833f = L.marker(
+                [59.31786, 18.18002],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_3047005bba38278fd51a194b377894ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_089985aadfa112ed8c6afa5120c7e5c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfa57ea471403abc93a6512ff1d7c7f4 = $(`<div id="html_bfa57ea471403abc93a6512ff1d7c7f4" style="width: 100.0%; height: 100.0%;">Nyckelviken utegym (Q107400814)</div>`)[0];
+                popup_089985aadfa112ed8c6afa5120c7e5c9.setContent(html_bfa57ea471403abc93a6512ff1d7c7f4);
+            
+        
+
+        marker_61266f39339d109a55479bd6b5eb833f.bindPopup(popup_089985aadfa112ed8c6afa5120c7e5c9)
+        ;
+
+        
+    
+    
+                marker_61266f39339d109a55479bd6b5eb833f.setIcon(icon_3047005bba38278fd51a194b377894ed);
+            
+    
+            var marker_786fe3a5d737573023a10d36d66016f8 = L.marker(
+                [59.32441, 18.20603],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_e369128375f9aef6d0e432f60e3da009 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01562e6556b7a70526fb53ff5d8ace5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_426ef238b14b164265d7b299739fba73 = $(`<div id="html_426ef238b14b164265d7b299739fba73" style="width: 100.0%; height: 100.0%;">Rudsjöparken utegym (Q107400823)</div>`)[0];
+                popup_01562e6556b7a70526fb53ff5d8ace5a.setContent(html_426ef238b14b164265d7b299739fba73);
+            
+        
+
+        marker_786fe3a5d737573023a10d36d66016f8.bindPopup(popup_01562e6556b7a70526fb53ff5d8ace5a)
+        ;
+
+        
+    
+    
+                marker_786fe3a5d737573023a10d36d66016f8.setIcon(icon_e369128375f9aef6d0e432f60e3da009);
+            
+    
+            var marker_f895ee746c94b2093e5cc757bd076ff7 = L.marker(
+                [59.3299, 18.2604],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_109453b5944b59cefd29b546e0443c66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46ab3d93f9aae8df5b8792b5a3b33690 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eef266816ebe234fc602d915bf37a89 = $(`<div id="html_0eef266816ebe234fc602d915bf37a89" style="width: 100.0%; height: 100.0%;">Sarvträsks utegym (Q107400658)</div>`)[0];
+                popup_46ab3d93f9aae8df5b8792b5a3b33690.setContent(html_0eef266816ebe234fc602d915bf37a89);
+            
+        
+
+        marker_f895ee746c94b2093e5cc757bd076ff7.bindPopup(popup_46ab3d93f9aae8df5b8792b5a3b33690)
+        ;
+
+        
+    
+    
+                marker_f895ee746c94b2093e5cc757bd076ff7.setIcon(icon_109453b5944b59cefd29b546e0443c66);
+            
+    
+            var marker_92f5430f061455dd9e1b27fda7b519cc = L.marker(
+                [59.30229, 18.12159],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_b5f4c84a89abe99a7bdfa47df1f7a6e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6329b4fb070ed06e09dc90792ff7df7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b663a481df74e6db062f01862b777a5c = $(`<div id="html_b663a481df74e6db062f01862b777a5c" style="width: 100.0%; height: 100.0%;">Sickla strand utegym (Q107400836)</div>`)[0];
+                popup_e6329b4fb070ed06e09dc90792ff7df7.setContent(html_b663a481df74e6db062f01862b777a5c);
+            
+        
+
+        marker_92f5430f061455dd9e1b27fda7b519cc.bindPopup(popup_e6329b4fb070ed06e09dc90792ff7df7)
+        ;
+
+        
+    
+    
+                marker_92f5430f061455dd9e1b27fda7b519cc.setIcon(icon_b5f4c84a89abe99a7bdfa47df1f7a6e9);
+            
+    
+            var marker_1ed6c766565593995e7db67a5f7e19dc = L.marker(
+                [59.27748, 18.27998],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_8f3a617490523ca8f66dfd9ce56d53e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4527adf9723d0dbf1f36a07ac60c2365 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67a596ba3aba8d8e351bb51193ca44a6 = $(`<div id="html_67a596ba3aba8d8e351bb51193ca44a6" style="width: 100.0%; height: 100.0%;">Tattby utegym (Q107400598)</div>`)[0];
+                popup_4527adf9723d0dbf1f36a07ac60c2365.setContent(html_67a596ba3aba8d8e351bb51193ca44a6);
+            
+        
+
+        marker_1ed6c766565593995e7db67a5f7e19dc.bindPopup(popup_4527adf9723d0dbf1f36a07ac60c2365)
+        ;
+
+        
+    
+    
+                marker_1ed6c766565593995e7db67a5f7e19dc.setIcon(icon_8f3a617490523ca8f66dfd9ce56d53e5);
+            
+    
+            var marker_e5aac86adcbf5faf90adb48b6d8437a7 = L.marker(
+                [59.3031418, 18.23525],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_4e1da96892dcdfb2f5f701574320f3ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c565f85d4837e2e8fc6d07a572a6ade = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3aabb72981c16c86aa59edff837644c = $(`<div id="html_b3aabb72981c16c86aa59edff837644c" style="width: 100.0%; height: 100.0%;">Tollare utegym (Q109691809)</div>`)[0];
+                popup_1c565f85d4837e2e8fc6d07a572a6ade.setContent(html_b3aabb72981c16c86aa59edff837644c);
+            
+        
+
+        marker_e5aac86adcbf5faf90adb48b6d8437a7.bindPopup(popup_1c565f85d4837e2e8fc6d07a572a6ade)
+        ;
+
+        
+    
+    
+                marker_e5aac86adcbf5faf90adb48b6d8437a7.setIcon(icon_4e1da96892dcdfb2f5f701574320f3ae);
+            
+    
+            var marker_012ebd0964b75377410b089f3cf63fa9 = L.marker(
+                [59.306675, 18.236715],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_7472af831165a878ed974cce6688b5ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7785dc65cb434cc42d8e463fd6ccdc87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cb63e7a5f53c8cd42502c1183caef08 = $(`<div id="html_8cb63e7a5f53c8cd42502c1183caef08" style="width: 100.0%; height: 100.0%;">Tollareängsvägen utegym (Q107723370)</div>`)[0];
+                popup_7785dc65cb434cc42d8e463fd6ccdc87.setContent(html_8cb63e7a5f53c8cd42502c1183caef08);
+            
+        
+
+        marker_012ebd0964b75377410b089f3cf63fa9.bindPopup(popup_7785dc65cb434cc42d8e463fd6ccdc87)
+        ;
+
+        
+    
+    
+                marker_012ebd0964b75377410b089f3cf63fa9.setIcon(icon_7472af831165a878ed974cce6688b5ea);
+            
+    
+            var marker_ad1d007b1154b055394ff0d410f8591f = L.marker(
+                [59.34678, 18.32],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_e5e030ef028647831439bb75f45f5967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad0e06a6bd7e7a7ad8c19e979b348449 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfbaea637e9b0c110035b6ae8dada47d = $(`<div id="html_cfbaea637e9b0c110035b6ae8dada47d" style="width: 100.0%; height: 100.0%;">Velamsunds utegym (Q107400679)</div>`)[0];
+                popup_ad0e06a6bd7e7a7ad8c19e979b348449.setContent(html_cfbaea637e9b0c110035b6ae8dada47d);
+            
+        
+
+        marker_ad1d007b1154b055394ff0d410f8591f.bindPopup(popup_ad0e06a6bd7e7a7ad8c19e979b348449)
+        ;
+
+        
+    
+    
+                marker_ad1d007b1154b055394ff0d410f8591f.setIcon(icon_e5e030ef028647831439bb75f45f5967);
+            
+    
+            var marker_c4a53b24509220e86ba607026759951a = L.marker(
+                [59.26333, 18.17708],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_e846cafeb800d73d2ef8f9601876a8c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fab7563c59561c35206f0ce480c3d452 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94647749b253d657642823900335f1bd = $(`<div id="html_94647749b253d657642823900335f1bd" style="width: 100.0%; height: 100.0%;">Älta IP utegym (Q107401210)</div>`)[0];
+                popup_fab7563c59561c35206f0ce480c3d452.setContent(html_94647749b253d657642823900335f1bd);
+            
+        
+
+        marker_c4a53b24509220e86ba607026759951a.bindPopup(popup_fab7563c59561c35206f0ce480c3d452)
+        ;
+
+        
+    
+    
+                marker_c4a53b24509220e86ba607026759951a.setIcon(icon_e846cafeb800d73d2ef8f9601876a8c7);
+            
+    
+            var marker_bf3ae082f2f5e62b5979fbfecb744e42 = L.marker(
+                [59.25427, 18.20481],
+                {
+}
+            ).addTo(map_e02952f01aa4cca174785b0836a3d11d);
+        
+    
+            var icon_631dc41897652eff7096ba83cb63c146 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3f66aab7577e61eb9a1413656d67bfb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5876f4e2fe07bb8f2283e66859b5e16a = $(`<div id="html_5876f4e2fe07bb8f2283e66859b5e16a" style="width: 100.0%; height: 100.0%;">Ältadalen utegym (Q107401066)</div>`)[0];
+                popup_a3f66aab7577e61eb9a1413656d67bfb.setContent(html_5876f4e2fe07bb8f2283e66859b5e16a);
+            
+        
+
+        marker_bf3ae082f2f5e62b5979fbfecb744e42.bindPopup(popup_a3f66aab7577e61eb9a1413656d67bfb)
+        ;
+
+        
+    
+    
+                marker_bf3ae082f2f5e62b5979fbfecb744e42.setIcon(icon_631dc41897652eff7096ba83cb63c146);
+            
+</script>
+</html>
+         </div>        <div class="map-box">
+   <h2>Karta 3: Avvikelser</h2>
+    <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3fa383a0edad35e35da26e1712cd80aa {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3fa383a0edad35e35da26e1712cd80aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3fa383a0edad35e35da26e1712cd80aa = L.map(
+                "map_3fa383a0edad35e35da26e1712cd80aa",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_166efd184f0916024a82cb0811c7398a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_166efd184f0916024a82cb0811c7398a.addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var marker_362b304dfdd4cfc798f0f1aa49412a65 = L.marker(
+                [59.28983945430401, 18.1590920330064],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_9ed0f50bc00ff6446ee36005afabb66b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_009dfe788fd6cc806a009b9e6d65b428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2822cbdc8d22f5b8bf12dfbf8e55e993 = $(`<div id="html_2822cbdc8d22f5b8bf12dfbf8e55e993" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_009dfe788fd6cc806a009b9e6d65b428.setContent(html_2822cbdc8d22f5b8bf12dfbf8e55e993);
+            
+        
+
+        marker_362b304dfdd4cfc798f0f1aa49412a65.bindPopup(popup_009dfe788fd6cc806a009b9e6d65b428)
+        ;
+
+        
+    
+    
+                marker_362b304dfdd4cfc798f0f1aa49412a65.setIcon(icon_9ed0f50bc00ff6446ee36005afabb66b);
+            
+    
+            var marker_d1ff63a9989b98cf9ef9188e93ff4691 = L.marker(
+                [59.290450469625384, 18.262519196708467],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_80bae140bc31272fa4785baa8599013d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38ac673305d5b00618e5710296f52989 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59de6a70d1afa341c1d0251335bab6aa = $(`<div id="html_59de6a70d1afa341c1d0251335bab6aa" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_38ac673305d5b00618e5710296f52989.setContent(html_59de6a70d1afa341c1d0251335bab6aa);
+            
+        
+
+        marker_d1ff63a9989b98cf9ef9188e93ff4691.bindPopup(popup_38ac673305d5b00618e5710296f52989)
+        ;
+
+        
+    
+    
+                marker_d1ff63a9989b98cf9ef9188e93ff4691.setIcon(icon_80bae140bc31272fa4785baa8599013d);
+            
+    
+            var marker_b4c7f47766a53541225ca881e15165ea = L.marker(
+                [59.329865723598736, 18.260073075618767],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_7a90d855ab940b58e7ab4f00058128cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f75f862b39111f72018bb980ace1160c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0a7a274d383036e6d096943905a0b62 = $(`<div id="html_c0a7a274d383036e6d096943905a0b62" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_f75f862b39111f72018bb980ace1160c.setContent(html_c0a7a274d383036e6d096943905a0b62);
+            
+        
+
+        marker_b4c7f47766a53541225ca881e15165ea.bindPopup(popup_f75f862b39111f72018bb980ace1160c)
+        ;
+
+        
+    
+    
+                marker_b4c7f47766a53541225ca881e15165ea.setIcon(icon_7a90d855ab940b58e7ab4f00058128cd);
+            
+    
+            var marker_c6145c6c294e6ab9b2c0c8e036d11455 = L.marker(
+                [59.27779320043651, 18.279911843061356],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_10ec5ba888c7a29b3b30c9c72aacb236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f543fc45581ab2f35f2593d36001c686 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e001aa91f9f75591dfa9f4a1dfcafb4b = $(`<div id="html_e001aa91f9f75591dfa9f4a1dfcafb4b" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_f543fc45581ab2f35f2593d36001c686.setContent(html_e001aa91f9f75591dfa9f4a1dfcafb4b);
+            
+        
+
+        marker_c6145c6c294e6ab9b2c0c8e036d11455.bindPopup(popup_f543fc45581ab2f35f2593d36001c686)
+        ;
+
+        
+    
+    
+                marker_c6145c6c294e6ab9b2c0c8e036d11455.setIcon(icon_10ec5ba888c7a29b3b30c9c72aacb236);
+            
+    
+            var marker_f239965bde57ee1263f8b4c6f56df5d5 = L.marker(
+                [59.32944893205928, 18.241169890979915],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_8e470ceba3d7a8b80763b6b5c4216562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42f48d0325df0c61265844ba1442d28d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a70db8f1f8b373bead3f6602bc7696f = $(`<div id="html_0a70db8f1f8b373bead3f6602bc7696f" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_42f48d0325df0c61265844ba1442d28d.setContent(html_0a70db8f1f8b373bead3f6602bc7696f);
+            
+        
+
+        marker_f239965bde57ee1263f8b4c6f56df5d5.bindPopup(popup_42f48d0325df0c61265844ba1442d28d)
+        ;
+
+        
+    
+    
+                marker_f239965bde57ee1263f8b4c6f56df5d5.setIcon(icon_8e470ceba3d7a8b80763b6b5c4216562);
+            
+    
+            var marker_4791560785647de4ac70a67d8cb70ae2 = L.marker(
+                [59.31695529163655, 18.144974148637314],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_c87923962bd707b4f2b9798da7812d6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_789f0657f77d680ac718f34caf02a396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab9baa17e62a8c5a57f618fe94445141 = $(`<div id="html_ab9baa17e62a8c5a57f618fe94445141" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_789f0657f77d680ac718f34caf02a396.setContent(html_ab9baa17e62a8c5a57f618fe94445141);
+            
+        
+
+        marker_4791560785647de4ac70a67d8cb70ae2.bindPopup(popup_789f0657f77d680ac718f34caf02a396)
+        ;
+
+        
+    
+    
+                marker_4791560785647de4ac70a67d8cb70ae2.setIcon(icon_c87923962bd707b4f2b9798da7812d6f);
+            
+    
+            var marker_70819679c577a2393b7f9cc97571c49d = L.marker(
+                [59.30297118045248, 18.23517559733983],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_11c82cdb1537639d6c58ab29c7964208 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_990a1f9b74f48f9c5f20dc64065e2ee9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecfa79d66c344f7888fb7fc614f54e86 = $(`<div id="html_ecfa79d66c344f7888fb7fc614f54e86" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_990a1f9b74f48f9c5f20dc64065e2ee9.setContent(html_ecfa79d66c344f7888fb7fc614f54e86);
+            
+        
+
+        marker_70819679c577a2393b7f9cc97571c49d.bindPopup(popup_990a1f9b74f48f9c5f20dc64065e2ee9)
+        ;
+
+        
+    
+    
+                marker_70819679c577a2393b7f9cc97571c49d.setIcon(icon_11c82cdb1537639d6c58ab29c7964208);
+            
+</script>
+</html></div>   
 </div>
 
 <div class="section">
