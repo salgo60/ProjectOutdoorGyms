@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ed685aae32aac22941bc7b97559c8ff {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ed685aae32aac22941bc7b97559c8ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ed685aae32aac22941bc7b97559c8ff = L.map(
+                "map_6ed685aae32aac22941bc7b97559c8ff",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79f17a9a9763a9849aff06c709a5c157 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79f17a9a9763a9849aff06c709a5c157.addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var marker_9f916dbe55939efbeb82b05da805608f = L.marker(
+                [59.31783292473409, 18.179951733568213],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_591375804d4305461b2a5d4cf6a5eba5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23a3faed3d4c351fa344f0d56d6feb90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af35851a04f8dbcac7186af2e414c0b = $(`<div id="html_8af35851a04f8dbcac7186af2e414c0b" style="width: 100.0%; height: 100.0%;">Lokalt utegym 0</div>`)[0];
+                popup_23a3faed3d4c351fa344f0d56d6feb90.setContent(html_8af35851a04f8dbcac7186af2e414c0b);
+            
+        
+
+        marker_9f916dbe55939efbeb82b05da805608f.bindPopup(popup_23a3faed3d4c351fa344f0d56d6feb90)
+        ;
+
+        
+    
+    
+                marker_9f916dbe55939efbeb82b05da805608f.setIcon(icon_591375804d4305461b2a5d4cf6a5eba5);
+            
+    
+            var marker_d184a3d24ae2548aae9c43ad28d62a7c = L.marker(
+                [59.34671701443543, 18.32000767459512],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_4b5b85faaf175eaff27d07188280ba09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d43149617fad04c634485a1137b8be74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e4248ba287d26a023ab74ed0d143e1a = $(`<div id="html_9e4248ba287d26a023ab74ed0d143e1a" style="width: 100.0%; height: 100.0%;">Lokalt utegym 1</div>`)[0];
+                popup_d43149617fad04c634485a1137b8be74.setContent(html_9e4248ba287d26a023ab74ed0d143e1a);
+            
+        
+
+        marker_d184a3d24ae2548aae9c43ad28d62a7c.bindPopup(popup_d43149617fad04c634485a1137b8be74)
+        ;
+
+        
+    
+    
+                marker_d184a3d24ae2548aae9c43ad28d62a7c.setIcon(icon_4b5b85faaf175eaff27d07188280ba09);
+            
+    
+            var marker_6c35b4a28bf748e581bf3ed3d45e23cd = L.marker(
+                [59.28983945430401, 18.159092033006402],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_6f603f31d7654db35d387c4e9f86ae47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04539e2682a90ea206b258a754825e13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b51c72fa783b9c0d2c37a0bbbc49935 = $(`<div id="html_7b51c72fa783b9c0d2c37a0bbbc49935" style="width: 100.0%; height: 100.0%;">Lokalt utegym 2</div>`)[0];
+                popup_04539e2682a90ea206b258a754825e13.setContent(html_7b51c72fa783b9c0d2c37a0bbbc49935);
+            
+        
+
+        marker_6c35b4a28bf748e581bf3ed3d45e23cd.bindPopup(popup_04539e2682a90ea206b258a754825e13)
+        ;
+
+        
+    
+    
+                marker_6c35b4a28bf748e581bf3ed3d45e23cd.setIcon(icon_6f603f31d7654db35d387c4e9f86ae47);
+            
+    
+            var marker_06ac272b8f45543743d6a70242bbf52c = L.marker(
+                [59.302306121114626, 18.121600464589374],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_e51429825147296b75fcc8da50dbcbef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c7f80c94961d6ab1e5a11fdc237601a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27a2689a773689c651f7886f4a0081ee = $(`<div id="html_27a2689a773689c651f7886f4a0081ee" style="width: 100.0%; height: 100.0%;">Lokalt utegym 3</div>`)[0];
+                popup_8c7f80c94961d6ab1e5a11fdc237601a.setContent(html_27a2689a773689c651f7886f4a0081ee);
+            
+        
+
+        marker_06ac272b8f45543743d6a70242bbf52c.bindPopup(popup_8c7f80c94961d6ab1e5a11fdc237601a)
+        ;
+
+        
+    
+    
+                marker_06ac272b8f45543743d6a70242bbf52c.setIcon(icon_e51429825147296b75fcc8da50dbcbef);
+            
+    
+            var marker_409d4ac2d00a975e8403ab323b49d6f4 = L.marker(
+                [59.24967749631198, 18.187016747287252],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_ea188d29265f415bc6ae9b92ce932fdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bb4f64325fcdd375c47af145ea96a4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce80a0a59ac64e596917588b69bda270 = $(`<div id="html_ce80a0a59ac64e596917588b69bda270" style="width: 100.0%; height: 100.0%;">Lokalt utegym 4</div>`)[0];
+                popup_9bb4f64325fcdd375c47af145ea96a4a.setContent(html_ce80a0a59ac64e596917588b69bda270);
+            
+        
+
+        marker_409d4ac2d00a975e8403ab323b49d6f4.bindPopup(popup_9bb4f64325fcdd375c47af145ea96a4a)
+        ;
+
+        
+    
+    
+                marker_409d4ac2d00a975e8403ab323b49d6f4.setIcon(icon_ea188d29265f415bc6ae9b92ce932fdd);
+            
+    
+            var marker_9bd694baf10ac12d0657ad0eb09dbc64 = L.marker(
+                [59.290450469625384, 18.26251919670847],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_c54c594ba5fd90ea773aca5c71826186 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1628ad60adcf29e390c6bfe7055d3a21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c932cc336da5427356fd18a6148497a2 = $(`<div id="html_c932cc336da5427356fd18a6148497a2" style="width: 100.0%; height: 100.0%;">Lokalt utegym 5</div>`)[0];
+                popup_1628ad60adcf29e390c6bfe7055d3a21.setContent(html_c932cc336da5427356fd18a6148497a2);
+            
+        
+
+        marker_9bd694baf10ac12d0657ad0eb09dbc64.bindPopup(popup_1628ad60adcf29e390c6bfe7055d3a21)
+        ;
+
+        
+    
+    
+                marker_9bd694baf10ac12d0657ad0eb09dbc64.setIcon(icon_c54c594ba5fd90ea773aca5c71826186);
+            
+    
+            var marker_755562a38aaa8d585788f6a726ad936a = L.marker(
+                [59.329865723598736, 18.260073075618767],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_89da93e3cb4919a7864dabc93e73b3b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10cce525681fce544f19aeac28c8f8d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_575f54b96989210d6310f298a34abb9c = $(`<div id="html_575f54b96989210d6310f298a34abb9c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 6</div>`)[0];
+                popup_10cce525681fce544f19aeac28c8f8d7.setContent(html_575f54b96989210d6310f298a34abb9c);
+            
+        
+
+        marker_755562a38aaa8d585788f6a726ad936a.bindPopup(popup_10cce525681fce544f19aeac28c8f8d7)
+        ;
+
+        
+    
+    
+                marker_755562a38aaa8d585788f6a726ad936a.setIcon(icon_89da93e3cb4919a7864dabc93e73b3b7);
+            
+    
+            var marker_5a7b86bd3825d99172dbb64da03a37c3 = L.marker(
+                [59.27779320043651, 18.279911843061356],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_5f04729eecca59d0e60175d8af06caf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67a3482e1a3d832cd87ab386e77f9e0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3320f0fb316635a3cf912be339d01624 = $(`<div id="html_3320f0fb316635a3cf912be339d01624" style="width: 100.0%; height: 100.0%;">Lokalt utegym 7</div>`)[0];
+                popup_67a3482e1a3d832cd87ab386e77f9e0b.setContent(html_3320f0fb316635a3cf912be339d01624);
+            
+        
+
+        marker_5a7b86bd3825d99172dbb64da03a37c3.bindPopup(popup_67a3482e1a3d832cd87ab386e77f9e0b)
+        ;
+
+        
+    
+    
+                marker_5a7b86bd3825d99172dbb64da03a37c3.setIcon(icon_5f04729eecca59d0e60175d8af06caf5);
+            
+    
+            var marker_bcc75db30cc349157fb6c3c7ef632394 = L.marker(
+                [59.31252999304202, 18.250508376983724],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_1cc14a5011bef444dc2a4f583326227a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c90de6f8bfb456a13150346b4f279e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27a3dcc2c625611dfdc227a2a35acfe0 = $(`<div id="html_27a3dcc2c625611dfdc227a2a35acfe0" style="width: 100.0%; height: 100.0%;">Lokalt utegym 8</div>`)[0];
+                popup_2c90de6f8bfb456a13150346b4f279e3.setContent(html_27a3dcc2c625611dfdc227a2a35acfe0);
+            
+        
+
+        marker_bcc75db30cc349157fb6c3c7ef632394.bindPopup(popup_2c90de6f8bfb456a13150346b4f279e3)
+        ;
+
+        
+    
+    
+                marker_bcc75db30cc349157fb6c3c7ef632394.setIcon(icon_1cc14a5011bef444dc2a4f583326227a);
+            
+    
+            var marker_2e7bab3aec22b590f711569245822086 = L.marker(
+                [59.294583896234734, 18.253774019952814],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_44d49fa7739600fdf74a0188a2208ccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c2391d29a35784cbdc95285de5236cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d22e490225067df6c58e3e364c2a6dfd = $(`<div id="html_d22e490225067df6c58e3e364c2a6dfd" style="width: 100.0%; height: 100.0%;">Lokalt utegym 9</div>`)[0];
+                popup_7c2391d29a35784cbdc95285de5236cf.setContent(html_d22e490225067df6c58e3e364c2a6dfd);
+            
+        
+
+        marker_2e7bab3aec22b590f711569245822086.bindPopup(popup_7c2391d29a35784cbdc95285de5236cf)
+        ;
+
+        
+    
+    
+                marker_2e7bab3aec22b590f711569245822086.setIcon(icon_44d49fa7739600fdf74a0188a2208ccd);
+            
+    
+            var marker_05e69046b2202241499896fc31aa4357 = L.marker(
+                [59.329448932059286, 18.241169890979915],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_36b945659f1da4a25be29b10f7aa2ecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca7bb7bb561fe02edc4eb5ba40aa3f61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfc9e420cff8028f657de46f1814d8bb = $(`<div id="html_dfc9e420cff8028f657de46f1814d8bb" style="width: 100.0%; height: 100.0%;">Lokalt utegym 10</div>`)[0];
+                popup_ca7bb7bb561fe02edc4eb5ba40aa3f61.setContent(html_dfc9e420cff8028f657de46f1814d8bb);
+            
+        
+
+        marker_05e69046b2202241499896fc31aa4357.bindPopup(popup_ca7bb7bb561fe02edc4eb5ba40aa3f61)
+        ;
+
+        
+    
+    
+                marker_05e69046b2202241499896fc31aa4357.setIcon(icon_36b945659f1da4a25be29b10f7aa2ecc);
+            
+    
+            var marker_268a6810a1a26061e05381d80091f4f8 = L.marker(
+                [59.307321401730285, 18.193666546914883],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_117e2bca3019e09991728180389c30e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf4f1eb3338cc252e60a205ce9f5ecb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bc319c83a1141299f97bb191f5db83c = $(`<div id="html_8bc319c83a1141299f97bb191f5db83c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 11</div>`)[0];
+                popup_cf4f1eb3338cc252e60a205ce9f5ecb5.setContent(html_8bc319c83a1141299f97bb191f5db83c);
+            
+        
+
+        marker_268a6810a1a26061e05381d80091f4f8.bindPopup(popup_cf4f1eb3338cc252e60a205ce9f5ecb5)
+        ;
+
+        
+    
+    
+                marker_268a6810a1a26061e05381d80091f4f8.setIcon(icon_117e2bca3019e09991728180389c30e2);
+            
+    
+            var marker_46e248b78507c946ab8f4b4abdd25e94 = L.marker(
+                [59.31695529163657, 18.144974148637314],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_c36a69033d0b0f70dee45fab3adfe2ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05238a5957d926afa6bbe58e3dfa0dae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93ac4499eb74a7e7edb7b3639f07869c = $(`<div id="html_93ac4499eb74a7e7edb7b3639f07869c" style="width: 100.0%; height: 100.0%;">Lokalt utegym 12</div>`)[0];
+                popup_05238a5957d926afa6bbe58e3dfa0dae.setContent(html_93ac4499eb74a7e7edb7b3639f07869c);
+            
+        
+
+        marker_46e248b78507c946ab8f4b4abdd25e94.bindPopup(popup_05238a5957d926afa6bbe58e3dfa0dae)
+        ;
+
+        
+    
+    
+                marker_46e248b78507c946ab8f4b4abdd25e94.setIcon(icon_c36a69033d0b0f70dee45fab3adfe2ef);
+            
+    
+            var marker_6ffe6be629b5480aa7bce495f0620c3f = L.marker(
+                [59.32441049957718, 18.20606340624574],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_536ad134f519645071a3f67967eb2fdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6a77e2096845db32773fdcca5357821 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_474b8a5b519d6a399072b4dca2f2456d = $(`<div id="html_474b8a5b519d6a399072b4dca2f2456d" style="width: 100.0%; height: 100.0%;">Lokalt utegym 13</div>`)[0];
+                popup_d6a77e2096845db32773fdcca5357821.setContent(html_474b8a5b519d6a399072b4dca2f2456d);
+            
+        
+
+        marker_6ffe6be629b5480aa7bce495f0620c3f.bindPopup(popup_d6a77e2096845db32773fdcca5357821)
+        ;
+
+        
+    
+    
+                marker_6ffe6be629b5480aa7bce495f0620c3f.setIcon(icon_536ad134f519645071a3f67967eb2fdf);
+            
+    
+            var marker_25c9d64c6317fee3e7ab2298e8a4e7b0 = L.marker(
+                [59.26334218545299, 18.17708332637994],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_84bcbe05e3d162cd10502dfa8da66d66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dab26a34b49171d62a12824b52fd533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc4ce8c4a4403907c5acab1a114882b7 = $(`<div id="html_cc4ce8c4a4403907c5acab1a114882b7" style="width: 100.0%; height: 100.0%;">Lokalt utegym 14</div>`)[0];
+                popup_9dab26a34b49171d62a12824b52fd533.setContent(html_cc4ce8c4a4403907c5acab1a114882b7);
+            
+        
+
+        marker_25c9d64c6317fee3e7ab2298e8a4e7b0.bindPopup(popup_9dab26a34b49171d62a12824b52fd533)
+        ;
+
+        
+    
+    
+                marker_25c9d64c6317fee3e7ab2298e8a4e7b0.setIcon(icon_84bcbe05e3d162cd10502dfa8da66d66);
+            
+    
+            var marker_55b8803ee1109d6ab0eb37018d4b7850 = L.marker(
+                [59.25427558695531, 18.20482608809121],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_ceb6a92a6a7fed2c4bafd8dd1a8ff5bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d82e8f818667a4b4d18f27af2ffe300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3515f5e93a86da6f5cba3a00ef9354fa = $(`<div id="html_3515f5e93a86da6f5cba3a00ef9354fa" style="width: 100.0%; height: 100.0%;">Lokalt utegym 15</div>`)[0];
+                popup_7d82e8f818667a4b4d18f27af2ffe300.setContent(html_3515f5e93a86da6f5cba3a00ef9354fa);
+            
+        
+
+        marker_55b8803ee1109d6ab0eb37018d4b7850.bindPopup(popup_7d82e8f818667a4b4d18f27af2ffe300)
+        ;
+
+        
+    
+    
+                marker_55b8803ee1109d6ab0eb37018d4b7850.setIcon(icon_ceb6a92a6a7fed2c4bafd8dd1a8ff5bf);
+            
+    
+            var marker_720a5df9bc6a8b501f0bd7cdd4674472 = L.marker(
+                [59.31067975710323, 18.113446030402873],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_3d8be16ce7626e09aec934dc47d7f83d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac13eadc3f68938f2ea0c0024aac14ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e2d774c2d6d9886a96b3675230f14f4 = $(`<div id="html_3e2d774c2d6d9886a96b3675230f14f4" style="width: 100.0%; height: 100.0%;">Lokalt utegym 16</div>`)[0];
+                popup_ac13eadc3f68938f2ea0c0024aac14ec.setContent(html_3e2d774c2d6d9886a96b3675230f14f4);
+            
+        
+
+        marker_720a5df9bc6a8b501f0bd7cdd4674472.bindPopup(popup_ac13eadc3f68938f2ea0c0024aac14ec)
+        ;
+
+        
+    
+    
+                marker_720a5df9bc6a8b501f0bd7cdd4674472.setIcon(icon_3d8be16ce7626e09aec934dc47d7f83d);
+            
+    
+            var marker_8b9db183b8ab8b1b6b6996597050e2cc = L.marker(
+                [59.30297118045249, 18.235175597339833],
+                {
+}
+            ).addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+            var icon_e937a1f2258eca53ce790b371575ff73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe4a90a60837854a282de4846ebcd620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed61a303cd130c317a3465d0e982cb57 = $(`<div id="html_ed61a303cd130c317a3465d0e982cb57" style="width: 100.0%; height: 100.0%;">Lokalt utegym 17</div>`)[0];
+                popup_fe4a90a60837854a282de4846ebcd620.setContent(html_ed61a303cd130c317a3465d0e982cb57);
+            
+        
+
+        marker_8b9db183b8ab8b1b6b6996597050e2cc.bindPopup(popup_fe4a90a60837854a282de4846ebcd620)
+        ;
+
+        
+    
+    
+                marker_8b9db183b8ab8b1b6b6996597050e2cc.setIcon(icon_e937a1f2258eca53ce790b371575ff73);
+            
+    
+            tile_layer_79f17a9a9763a9849aff06c709a5c157.addTo(map_6ed685aae32aac22941bc7b97559c8ff);
+        
+    
+                marker_9f916dbe55939efbeb82b05da805608f.setIcon(icon_591375804d4305461b2a5d4cf6a5eba5);
+            
+    
+                marker_d184a3d24ae2548aae9c43ad28d62a7c.setIcon(icon_4b5b85faaf175eaff27d07188280ba09);
+            
+    
+                marker_6c35b4a28bf748e581bf3ed3d45e23cd.setIcon(icon_6f603f31d7654db35d387c4e9f86ae47);
+            
+    
+                marker_06ac272b8f45543743d6a70242bbf52c.setIcon(icon_e51429825147296b75fcc8da50dbcbef);
+            
+    
+                marker_409d4ac2d00a975e8403ab323b49d6f4.setIcon(icon_ea188d29265f415bc6ae9b92ce932fdd);
+            
+    
+                marker_9bd694baf10ac12d0657ad0eb09dbc64.setIcon(icon_c54c594ba5fd90ea773aca5c71826186);
+            
+    
+                marker_755562a38aaa8d585788f6a726ad936a.setIcon(icon_89da93e3cb4919a7864dabc93e73b3b7);
+            
+    
+                marker_5a7b86bd3825d99172dbb64da03a37c3.setIcon(icon_5f04729eecca59d0e60175d8af06caf5);
+            
+    
+                marker_bcc75db30cc349157fb6c3c7ef632394.setIcon(icon_1cc14a5011bef444dc2a4f583326227a);
+            
+    
+                marker_2e7bab3aec22b590f711569245822086.setIcon(icon_44d49fa7739600fdf74a0188a2208ccd);
+            
+    
+                marker_05e69046b2202241499896fc31aa4357.setIcon(icon_36b945659f1da4a25be29b10f7aa2ecc);
+            
+    
+                marker_268a6810a1a26061e05381d80091f4f8.setIcon(icon_117e2bca3019e09991728180389c30e2);
+            
+    
+                marker_46e248b78507c946ab8f4b4abdd25e94.setIcon(icon_c36a69033d0b0f70dee45fab3adfe2ef);
+            
+    
+                marker_6ffe6be629b5480aa7bce495f0620c3f.setIcon(icon_536ad134f519645071a3f67967eb2fdf);
+            
+    
+                marker_25c9d64c6317fee3e7ab2298e8a4e7b0.setIcon(icon_84bcbe05e3d162cd10502dfa8da66d66);
+            
+    
+                marker_55b8803ee1109d6ab0eb37018d4b7850.setIcon(icon_ceb6a92a6a7fed2c4bafd8dd1a8ff5bf);
+            
+    
+                marker_720a5df9bc6a8b501f0bd7cdd4674472.setIcon(icon_3d8be16ce7626e09aec934dc47d7f83d);
+            
+    
+                marker_8b9db183b8ab8b1b6b6996597050e2cc.setIcon(icon_e937a1f2258eca53ce790b371575ff73);
+            
+</script>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3fa383a0edad35e35da26e1712cd80aa {
+                    position: relative;
+                    width: 400.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3fa383a0edad35e35da26e1712cd80aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3fa383a0edad35e35da26e1712cd80aa = L.map(
+                "map_3fa383a0edad35e35da26e1712cd80aa",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_166efd184f0916024a82cb0811c7398a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_166efd184f0916024a82cb0811c7398a.addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var marker_362b304dfdd4cfc798f0f1aa49412a65 = L.marker(
+                [59.28983945430401, 18.1590920330064],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_9ed0f50bc00ff6446ee36005afabb66b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_009dfe788fd6cc806a009b9e6d65b428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2822cbdc8d22f5b8bf12dfbf8e55e993 = $(`<div id="html_2822cbdc8d22f5b8bf12dfbf8e55e993" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_009dfe788fd6cc806a009b9e6d65b428.setContent(html_2822cbdc8d22f5b8bf12dfbf8e55e993);
+            
+        
+
+        marker_362b304dfdd4cfc798f0f1aa49412a65.bindPopup(popup_009dfe788fd6cc806a009b9e6d65b428)
+        ;
+
+        
+    
+    
+                marker_362b304dfdd4cfc798f0f1aa49412a65.setIcon(icon_9ed0f50bc00ff6446ee36005afabb66b);
+            
+    
+            var marker_d1ff63a9989b98cf9ef9188e93ff4691 = L.marker(
+                [59.290450469625384, 18.262519196708467],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_80bae140bc31272fa4785baa8599013d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38ac673305d5b00618e5710296f52989 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59de6a70d1afa341c1d0251335bab6aa = $(`<div id="html_59de6a70d1afa341c1d0251335bab6aa" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_38ac673305d5b00618e5710296f52989.setContent(html_59de6a70d1afa341c1d0251335bab6aa);
+            
+        
+
+        marker_d1ff63a9989b98cf9ef9188e93ff4691.bindPopup(popup_38ac673305d5b00618e5710296f52989)
+        ;
+
+        
+    
+    
+                marker_d1ff63a9989b98cf9ef9188e93ff4691.setIcon(icon_80bae140bc31272fa4785baa8599013d);
+            
+    
+            var marker_b4c7f47766a53541225ca881e15165ea = L.marker(
+                [59.329865723598736, 18.260073075618767],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_7a90d855ab940b58e7ab4f00058128cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f75f862b39111f72018bb980ace1160c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0a7a274d383036e6d096943905a0b62 = $(`<div id="html_c0a7a274d383036e6d096943905a0b62" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_f75f862b39111f72018bb980ace1160c.setContent(html_c0a7a274d383036e6d096943905a0b62);
+            
+        
+
+        marker_b4c7f47766a53541225ca881e15165ea.bindPopup(popup_f75f862b39111f72018bb980ace1160c)
+        ;
+
+        
+    
+    
+                marker_b4c7f47766a53541225ca881e15165ea.setIcon(icon_7a90d855ab940b58e7ab4f00058128cd);
+            
+    
+            var marker_c6145c6c294e6ab9b2c0c8e036d11455 = L.marker(
+                [59.27779320043651, 18.279911843061356],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_10ec5ba888c7a29b3b30c9c72aacb236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f543fc45581ab2f35f2593d36001c686 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e001aa91f9f75591dfa9f4a1dfcafb4b = $(`<div id="html_e001aa91f9f75591dfa9f4a1dfcafb4b" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_f543fc45581ab2f35f2593d36001c686.setContent(html_e001aa91f9f75591dfa9f4a1dfcafb4b);
+            
+        
+
+        marker_c6145c6c294e6ab9b2c0c8e036d11455.bindPopup(popup_f543fc45581ab2f35f2593d36001c686)
+        ;
+
+        
+    
+    
+                marker_c6145c6c294e6ab9b2c0c8e036d11455.setIcon(icon_10ec5ba888c7a29b3b30c9c72aacb236);
+            
+    
+            var marker_f239965bde57ee1263f8b4c6f56df5d5 = L.marker(
+                [59.32944893205928, 18.241169890979915],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_8e470ceba3d7a8b80763b6b5c4216562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42f48d0325df0c61265844ba1442d28d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a70db8f1f8b373bead3f6602bc7696f = $(`<div id="html_0a70db8f1f8b373bead3f6602bc7696f" style="width: 100.0%; height: 100.0%;">Saknas i Wikidata</div>`)[0];
+                popup_42f48d0325df0c61265844ba1442d28d.setContent(html_0a70db8f1f8b373bead3f6602bc7696f);
+            
+        
+
+        marker_f239965bde57ee1263f8b4c6f56df5d5.bindPopup(popup_42f48d0325df0c61265844ba1442d28d)
+        ;
+
+        
+    
+    
+                marker_f239965bde57ee1263f8b4c6f56df5d5.setIcon(icon_8e470ceba3d7a8b80763b6b5c4216562);
+            
+    
+            var marker_4791560785647de4ac70a67d8cb70ae2 = L.marker(
+                [59.31695529163655, 18.144974148637314],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_c87923962bd707b4f2b9798da7812d6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_789f0657f77d680ac718f34caf02a396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab9baa17e62a8c5a57f618fe94445141 = $(`<div id="html_ab9baa17e62a8c5a57f618fe94445141" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_789f0657f77d680ac718f34caf02a396.setContent(html_ab9baa17e62a8c5a57f618fe94445141);
+            
+        
+
+        marker_4791560785647de4ac70a67d8cb70ae2.bindPopup(popup_789f0657f77d680ac718f34caf02a396)
+        ;
+
+        
+    
+    
+                marker_4791560785647de4ac70a67d8cb70ae2.setIcon(icon_c87923962bd707b4f2b9798da7812d6f);
+            
+    
+            var marker_70819679c577a2393b7f9cc97571c49d = L.marker(
+                [59.30297118045248, 18.23517559733983],
+                {
+}
+            ).addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+            var icon_11c82cdb1537639d6c58ab29c7964208 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_990a1f9b74f48f9c5f20dc64065e2ee9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecfa79d66c344f7888fb7fc614f54e86 = $(`<div id="html_ecfa79d66c344f7888fb7fc614f54e86" style="width: 100.0%; height: 100.0%;">Koordinatavvikelse (>25 m)</div>`)[0];
+                popup_990a1f9b74f48f9c5f20dc64065e2ee9.setContent(html_ecfa79d66c344f7888fb7fc614f54e86);
+            
+        
+
+        marker_70819679c577a2393b7f9cc97571c49d.bindPopup(popup_990a1f9b74f48f9c5f20dc64065e2ee9)
+        ;
+
+        
+    
+    
+                marker_70819679c577a2393b7f9cc97571c49d.setIcon(icon_11c82cdb1537639d6c58ab29c7964208);
+            
+    
+            tile_layer_166efd184f0916024a82cb0811c7398a.addTo(map_3fa383a0edad35e35da26e1712cd80aa);
+        
+    
+                marker_362b304dfdd4cfc798f0f1aa49412a65.setIcon(icon_9ed0f50bc00ff6446ee36005afabb66b);
+            
+    
+                marker_d1ff63a9989b98cf9ef9188e93ff4691.setIcon(icon_80bae140bc31272fa4785baa8599013d);
+            
+    
+                marker_b4c7f47766a53541225ca881e15165ea.setIcon(icon_7a90d855ab940b58e7ab4f00058128cd);
+            
+    
+                marker_c6145c6c294e6ab9b2c0c8e036d11455.setIcon(icon_10ec5ba888c7a29b3b30c9c72aacb236);
+            
+    
+                marker_f239965bde57ee1263f8b4c6f56df5d5.setIcon(icon_8e470ceba3d7a8b80763b6b5c4216562);
+            
+    
+                marker_4791560785647de4ac70a67d8cb70ae2.setIcon(icon_c87923962bd707b4f2b9798da7812d6f);
+            
+    
+                marker_70819679c577a2393b7f9cc97571c49d.setIcon(icon_11c82cdb1537639d6c58ab29c7964208);
+            
+</script>
+</html>
