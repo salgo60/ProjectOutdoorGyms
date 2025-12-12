@@ -1,0 +1,454 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Utegymrapport 2025_12_12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Utegymrapport</h1>
+<p>Genererad: <strong>2025-12-12 13:36:04</strong></p>
+
+<div class="section">
+    <h2>Datasetinformation</h2>
+    <p><strong>Antal rader:</strong> 18</p>
+    <p><strong>CRS:</strong> EPSG:4326</p>
+    <p><strong>Kolumner:</strong> namn, nummer, kommundel, ansvar_skotsel, pkid, ansvar, atgardstyp, typ, area, etikett, inlagd_den, andrad_den, lank, Renoverad, Longitud, Latitud, Adresspunkt, geometry</p>
+</div>
+
+<div class="section">
+    <h2>Förhandsgranskning (20 första raderna)</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>namn</th>
+      <th>nummer</th>
+      <th>kommundel</th>
+      <th>ansvar_skotsel</th>
+      <th>pkid</th>
+      <th>ansvar</th>
+      <th>atgardstyp</th>
+      <th>typ</th>
+      <th>area</th>
+      <th>etikett</th>
+      <th>inlagd_den</th>
+      <th>andrad_den</th>
+      <th>lank</th>
+      <th>Renoverad</th>
+      <th>Longitud</th>
+      <th>Latitud</th>
+      <th>Adresspunkt</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Nyckelviken</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76489</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>475.908099</td>
+      <td>GYM</td>
+      <td>2022-11-01</td>
+      <td>2021-05-31</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Nyckelviksvägen</td>
+      <td>POINT (18.17995 59.31783)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Velamsund</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76491</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>625.345713</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Velamsundsvägen 33</td>
+      <td>POINT (18.32001 59.34672)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Hellasgården</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76602</td>
+      <td>Stockholm</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>725.504116</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-10-26</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.15909 59.28984)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sickla strand</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76448</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>52.616543</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sickla strand 25</td>
+      <td>POINT (18.1216 59.30231)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Hedvigslund</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76422</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>77.625551</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Anemonvägen 38</td>
+      <td>POINT (18.18702 59.24968)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Gröna dalen, Fisksätra</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>79873</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>505.436980</td>
+      <td>GYM</td>
+      <td>2022-06-15</td>
+      <td>2023-02-08</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Gröna dalen</td>
+      <td>POINT (18.26252 59.29045)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Sarvträsk, Orminge</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76426</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>69.946158</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sandövägen 4</td>
+      <td>POINT (18.26007 59.32987)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Tattby, nära Samskolan</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76427</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>331.896466</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Samskolevägen 6</td>
+      <td>POINT (18.27991 59.27779)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Kocktorpssjön</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77010</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>702.086429</td>
+      <td>GYM</td>
+      <td>2019-06-27</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Skivlingevägen 24</td>
+      <td>POINT (18.25051 59.31253)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Fisksätra IP</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77006</td>
+      <td>idrott</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>130.056814</td>
+      <td>GYM</td>
+      <td>2019-06-27</td>
+      <td>2022-12-09</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.25377 59.29458)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Krokhöjden</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76480</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>447.726559</td>
+      <td>GYM</td>
+      <td>2018-11-01</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Arnövägen 15</td>
+      <td>POINT (18.24117 59.32945)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Långsjön</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76577</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>485.488531</td>
+      <td>GYM</td>
+      <td>2018-11-05</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Bävervägen 2</td>
+      <td>POINT (18.19367 59.30732)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Kvarnholmsparken</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76603</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>213.157034</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Mjölnarvägen 32</td>
+      <td>POINT (18.14497 59.31696)</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Rudsjöparkens utegym</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77078</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>95.615831</td>
+      <td>GYM</td>
+      <td>2019-07-08</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rudsjövägen 4</td>
+      <td>POINT (18.20606 59.32441)</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Älta IP</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>76604</td>
+      <td>idrott</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>353.746584</td>
+      <td>GYM</td>
+      <td>2018-11-06</td>
+      <td>2022-12-09</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>POINT (18.17708 59.26334)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Ältadalen</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>77689</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>1594.724594</td>
+      <td>GYM</td>
+      <td>2020-04-24</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Storkällansväg</td>
+      <td>POINT (18.20483 59.25428)</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Henriksdalsberget</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>78164</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>565.465656</td>
+      <td>GYM</td>
+      <td>2020-10-05</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Henriksdalsringen 8</td>
+      <td>POINT (18.11345 59.31068)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Tollare</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>None</td>
+      <td>78866</td>
+      <td>None</td>
+      <td>None</td>
+      <td>utegym</td>
+      <td>236.293326</td>
+      <td>GYM</td>
+      <td>2021-11-12</td>
+      <td>2022-11-01</td>
+      <td>https://www.nacka.se/uppleva--gora/friluftsliv-motion/trana-i-naturen/utegym/</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hedenströmsväg 11</td>
+      <td>POINT (18.23518 59.30297)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>

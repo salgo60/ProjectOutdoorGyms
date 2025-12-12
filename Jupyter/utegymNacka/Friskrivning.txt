@@ -1,0 +1,7 @@
+﻿Friskrivning
+
+Nacka kommun friskriver sig från varje form av ansvar för fel eller förändringar 
+i öppna data som levererats från Nacka kommun till konsumenten. Nacka kommun 
+friskriver sig från varje form av ansvar för skada eller annan olägenhet som kan 
+uppkomma för konsumenten till följd av nyttjande av öppna data i följdproduktion 
+eller tillsammans med annan information.

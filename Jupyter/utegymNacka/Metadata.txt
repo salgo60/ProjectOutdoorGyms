@@ -1,0 +1,11 @@
+﻿pkid: 25
+Titel: utegym
+Beskrivning: Vektordata över Nackas utegym
+Kvalitet:Digitaliserad
+Kvalitet beskrivning:
+Uppdateringsfrekvens: Varje år
+Senast uppdaterad: 20211109
+Aktualitet: 20200107
+Ursprung: Enhet
+Konsultnamn:
+Dataägare: 
