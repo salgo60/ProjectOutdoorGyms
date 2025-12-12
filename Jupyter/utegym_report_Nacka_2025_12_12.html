@@ -36,7 +36,795 @@
 
 <h1>Utegymrapport</h1>
 <p><strong>Issue:</strong> <a href="https://github.com/salgo60/ProjectOutdoorGyms/issues/97">#97</a></p>
-<p>Genererad: <strong>2025-12-12 13:55:00</strong></p>
+<p>Genererad: <strong>2025-12-12 14:04:46</strong></p>
+<div class="section">
+    <h2>Karta över utegymmen</h2>
+    <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bcc76a2df7d4cc55d5562b3c70c05cf0 {
+                    position: relative;
+                    width: 600.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bcc76a2df7d4cc55d5562b3c70c05cf0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bcc76a2df7d4cc55d5562b3c70c05cf0 = L.map(
+                "map_bcc76a2df7d4cc55d5562b3c70c05cf0",
+                {
+                    center: [59.301166729378046, 18.21060334446462],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59aac49fdf9ac718a23e32cf84042d7c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_59aac49fdf9ac718a23e32cf84042d7c.addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var marker_c1d2f55e5d9e1d2e09408effa7d04941 = L.marker(
+                [59.31783292473409, 18.179951733568213],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_9ba197970ffdfef4d2217542224b0a03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_671db12b051750ade2f1005252181eea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3640429c0b642e13f0df98d4d68c2c89 = $(`<div id="html_3640429c0b642e13f0df98d4d68c2c89" style="width: 100.0%; height: 100.0%;">Nyckelviken</div>`)[0];
+                popup_671db12b051750ade2f1005252181eea.setContent(html_3640429c0b642e13f0df98d4d68c2c89);
+            
+        
+
+        marker_c1d2f55e5d9e1d2e09408effa7d04941.bindPopup(popup_671db12b051750ade2f1005252181eea)
+        ;
+
+        
+    
+    
+                marker_c1d2f55e5d9e1d2e09408effa7d04941.setIcon(icon_9ba197970ffdfef4d2217542224b0a03);
+            
+    
+            var marker_327858b84ac8fdc3f38bac57237e7a18 = L.marker(
+                [59.34671701443543, 18.32000767459512],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_410c403cdf333d2c47cabc67323fc969 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5c196fec5804c0a4d2e9a94b8e053d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_625bcc1cf0eb8e1799e52b6ae7178676 = $(`<div id="html_625bcc1cf0eb8e1799e52b6ae7178676" style="width: 100.0%; height: 100.0%;">Velamsund</div>`)[0];
+                popup_1c5c196fec5804c0a4d2e9a94b8e053d.setContent(html_625bcc1cf0eb8e1799e52b6ae7178676);
+            
+        
+
+        marker_327858b84ac8fdc3f38bac57237e7a18.bindPopup(popup_1c5c196fec5804c0a4d2e9a94b8e053d)
+        ;
+
+        
+    
+    
+                marker_327858b84ac8fdc3f38bac57237e7a18.setIcon(icon_410c403cdf333d2c47cabc67323fc969);
+            
+    
+            var marker_ce3eb8aac4a581b1826352535172b9ec = L.marker(
+                [59.28983945430401, 18.159092033006402],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_7d570abe19e6f0d98764c4ff608b936f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2ebba8ce4ca17c8de56f18af61b74cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d110d50dd9e94f6180cb82c1b875629 = $(`<div id="html_8d110d50dd9e94f6180cb82c1b875629" style="width: 100.0%; height: 100.0%;">Hellasgården</div>`)[0];
+                popup_b2ebba8ce4ca17c8de56f18af61b74cf.setContent(html_8d110d50dd9e94f6180cb82c1b875629);
+            
+        
+
+        marker_ce3eb8aac4a581b1826352535172b9ec.bindPopup(popup_b2ebba8ce4ca17c8de56f18af61b74cf)
+        ;
+
+        
+    
+    
+                marker_ce3eb8aac4a581b1826352535172b9ec.setIcon(icon_7d570abe19e6f0d98764c4ff608b936f);
+            
+    
+            var marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6 = L.marker(
+                [59.302306121114626, 18.121600464589374],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_8889188e09342605c0b8be65c246ff43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6214dc7f35aaed7f22f4d639496b881f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92143a19add97b9822d947404ed6dd97 = $(`<div id="html_92143a19add97b9822d947404ed6dd97" style="width: 100.0%; height: 100.0%;">Sickla strand</div>`)[0];
+                popup_6214dc7f35aaed7f22f4d639496b881f.setContent(html_92143a19add97b9822d947404ed6dd97);
+            
+        
+
+        marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6.bindPopup(popup_6214dc7f35aaed7f22f4d639496b881f)
+        ;
+
+        
+    
+    
+                marker_34a2c303ef4f5fb4bbcb52c2ac6d58d6.setIcon(icon_8889188e09342605c0b8be65c246ff43);
+            
+    
+            var marker_38d431f9adb6b5a695a4af84c3d04b26 = L.marker(
+                [59.24967749631198, 18.187016747287252],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_864bb07f3c427ac76555325c308e8a1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_246e906c9474da291506b7ef66550f25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77599c3d0cda59ee71cc9a117c13ab81 = $(`<div id="html_77599c3d0cda59ee71cc9a117c13ab81" style="width: 100.0%; height: 100.0%;">Hedvigslund</div>`)[0];
+                popup_246e906c9474da291506b7ef66550f25.setContent(html_77599c3d0cda59ee71cc9a117c13ab81);
+            
+        
+
+        marker_38d431f9adb6b5a695a4af84c3d04b26.bindPopup(popup_246e906c9474da291506b7ef66550f25)
+        ;
+
+        
+    
+    
+                marker_38d431f9adb6b5a695a4af84c3d04b26.setIcon(icon_864bb07f3c427ac76555325c308e8a1f);
+            
+    
+            var marker_2c6cf1df319f037d10a773eb7f10823f = L.marker(
+                [59.290450469625384, 18.26251919670847],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_9b5f65030e88d4d3101e38da0558e19e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e61e1769a6c30a9e1d0ed60073f4bd49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb6208341434cf6b8fb42fc3027aee86 = $(`<div id="html_fb6208341434cf6b8fb42fc3027aee86" style="width: 100.0%; height: 100.0%;">Gröna dalen, Fisksätra</div>`)[0];
+                popup_e61e1769a6c30a9e1d0ed60073f4bd49.setContent(html_fb6208341434cf6b8fb42fc3027aee86);
+            
+        
+
+        marker_2c6cf1df319f037d10a773eb7f10823f.bindPopup(popup_e61e1769a6c30a9e1d0ed60073f4bd49)
+        ;
+
+        
+    
+    
+                marker_2c6cf1df319f037d10a773eb7f10823f.setIcon(icon_9b5f65030e88d4d3101e38da0558e19e);
+            
+    
+            var marker_0e864f05045d7e10cfd8501155d227e5 = L.marker(
+                [59.329865723598736, 18.260073075618767],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_c84cd9812e44622070a5ac87eaeca320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d2b7cc563aabc2a19f2f6c529443e17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73a59ed7ad656ce8b60b62f66c13ac98 = $(`<div id="html_73a59ed7ad656ce8b60b62f66c13ac98" style="width: 100.0%; height: 100.0%;">Sarvträsk, Orminge</div>`)[0];
+                popup_9d2b7cc563aabc2a19f2f6c529443e17.setContent(html_73a59ed7ad656ce8b60b62f66c13ac98);
+            
+        
+
+        marker_0e864f05045d7e10cfd8501155d227e5.bindPopup(popup_9d2b7cc563aabc2a19f2f6c529443e17)
+        ;
+
+        
+    
+    
+                marker_0e864f05045d7e10cfd8501155d227e5.setIcon(icon_c84cd9812e44622070a5ac87eaeca320);
+            
+    
+            var marker_0002206238f44e870f400b25f9512451 = L.marker(
+                [59.27779320043651, 18.279911843061356],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_8062d3fc5bd57b372c7dc6399f43e567 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fd00bbd3a046d1697f208df0e039de4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_500edb6fe7e4f1a4f7c37d79d3b72267 = $(`<div id="html_500edb6fe7e4f1a4f7c37d79d3b72267" style="width: 100.0%; height: 100.0%;">Tattby, nära Samskolan</div>`)[0];
+                popup_5fd00bbd3a046d1697f208df0e039de4.setContent(html_500edb6fe7e4f1a4f7c37d79d3b72267);
+            
+        
+
+        marker_0002206238f44e870f400b25f9512451.bindPopup(popup_5fd00bbd3a046d1697f208df0e039de4)
+        ;
+
+        
+    
+    
+                marker_0002206238f44e870f400b25f9512451.setIcon(icon_8062d3fc5bd57b372c7dc6399f43e567);
+            
+    
+            var marker_62c653d5c151e0853b79de5e0b326b13 = L.marker(
+                [59.31252999304202, 18.250508376983724],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_d68f8b01f74ff566eb5b403b9684de53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f097d4879d2cf76609256da1c1294282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2295c72701419f7edfb6330b9f858a43 = $(`<div id="html_2295c72701419f7edfb6330b9f858a43" style="width: 100.0%; height: 100.0%;">Kocktorpssjön</div>`)[0];
+                popup_f097d4879d2cf76609256da1c1294282.setContent(html_2295c72701419f7edfb6330b9f858a43);
+            
+        
+
+        marker_62c653d5c151e0853b79de5e0b326b13.bindPopup(popup_f097d4879d2cf76609256da1c1294282)
+        ;
+
+        
+    
+    
+                marker_62c653d5c151e0853b79de5e0b326b13.setIcon(icon_d68f8b01f74ff566eb5b403b9684de53);
+            
+    
+            var marker_61862a986d347a5995d7f653202ad64c = L.marker(
+                [59.294583896234734, 18.253774019952814],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_b511d8c9dc40b76b3a91d54187e89321 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29b13eb74a54b20adf4d11f307cc4a02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67087ca69b81c00e6322b52455061002 = $(`<div id="html_67087ca69b81c00e6322b52455061002" style="width: 100.0%; height: 100.0%;">Fisksätra IP</div>`)[0];
+                popup_29b13eb74a54b20adf4d11f307cc4a02.setContent(html_67087ca69b81c00e6322b52455061002);
+            
+        
+
+        marker_61862a986d347a5995d7f653202ad64c.bindPopup(popup_29b13eb74a54b20adf4d11f307cc4a02)
+        ;
+
+        
+    
+    
+                marker_61862a986d347a5995d7f653202ad64c.setIcon(icon_b511d8c9dc40b76b3a91d54187e89321);
+            
+    
+            var marker_8c90e2b326d5dd3c425d87fe7aa926bf = L.marker(
+                [59.329448932059286, 18.241169890979915],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_a3d74c4719c49e6227343f10e0e5b6de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2976d6ddf0a726ff01c7002be2cfd3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_097178e3dffefce727f55989b358e91e = $(`<div id="html_097178e3dffefce727f55989b358e91e" style="width: 100.0%; height: 100.0%;">Krokhöjden</div>`)[0];
+                popup_f2976d6ddf0a726ff01c7002be2cfd3a.setContent(html_097178e3dffefce727f55989b358e91e);
+            
+        
+
+        marker_8c90e2b326d5dd3c425d87fe7aa926bf.bindPopup(popup_f2976d6ddf0a726ff01c7002be2cfd3a)
+        ;
+
+        
+    
+    
+                marker_8c90e2b326d5dd3c425d87fe7aa926bf.setIcon(icon_a3d74c4719c49e6227343f10e0e5b6de);
+            
+    
+            var marker_6c15dd4204978eac4c9bea09e41a7629 = L.marker(
+                [59.307321401730285, 18.193666546914883],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_4f6bd63b986af9c16859f7da5f432a68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eb81839d7bd43a882e43c225b38ca57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e696f73d1a47fde21eef1f4fe3b0fa76 = $(`<div id="html_e696f73d1a47fde21eef1f4fe3b0fa76" style="width: 100.0%; height: 100.0%;">Långsjön</div>`)[0];
+                popup_5eb81839d7bd43a882e43c225b38ca57.setContent(html_e696f73d1a47fde21eef1f4fe3b0fa76);
+            
+        
+
+        marker_6c15dd4204978eac4c9bea09e41a7629.bindPopup(popup_5eb81839d7bd43a882e43c225b38ca57)
+        ;
+
+        
+    
+    
+                marker_6c15dd4204978eac4c9bea09e41a7629.setIcon(icon_4f6bd63b986af9c16859f7da5f432a68);
+            
+    
+            var marker_30cde130ec5772a5f1679a355e725b03 = L.marker(
+                [59.31695529163657, 18.144974148637314],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_c2f2e305c47f639fb873abf1a67b47b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcbdab6522e4bee045c1230b6e37c4ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fc0374f6729b49649c582d633e7a321 = $(`<div id="html_9fc0374f6729b49649c582d633e7a321" style="width: 100.0%; height: 100.0%;">Kvarnholmsparken</div>`)[0];
+                popup_dcbdab6522e4bee045c1230b6e37c4ef.setContent(html_9fc0374f6729b49649c582d633e7a321);
+            
+        
+
+        marker_30cde130ec5772a5f1679a355e725b03.bindPopup(popup_dcbdab6522e4bee045c1230b6e37c4ef)
+        ;
+
+        
+    
+    
+                marker_30cde130ec5772a5f1679a355e725b03.setIcon(icon_c2f2e305c47f639fb873abf1a67b47b1);
+            
+    
+            var marker_594053b7cb1e10b51ac6ae0880ac0546 = L.marker(
+                [59.32441049957718, 18.20606340624574],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_ce516ac7efaf06159039326a5fd8bc0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7fc3e37d6a22129705dec56b22639c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61d1c1c269bbe00382f87862c795bc96 = $(`<div id="html_61d1c1c269bbe00382f87862c795bc96" style="width: 100.0%; height: 100.0%;">Rudsjöparkens utegym</div>`)[0];
+                popup_a7fc3e37d6a22129705dec56b22639c0.setContent(html_61d1c1c269bbe00382f87862c795bc96);
+            
+        
+
+        marker_594053b7cb1e10b51ac6ae0880ac0546.bindPopup(popup_a7fc3e37d6a22129705dec56b22639c0)
+        ;
+
+        
+    
+    
+                marker_594053b7cb1e10b51ac6ae0880ac0546.setIcon(icon_ce516ac7efaf06159039326a5fd8bc0b);
+            
+    
+            var marker_7c249f5c263f9ea55328c2e888c59add = L.marker(
+                [59.26334218545299, 18.17708332637994],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_58eb3ff85e16cbf36cc59dd548ae2ce2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89dfc47fa3c7b3e0e02a12a0b921cf66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_903f2c4baa66073a567e8b285323ee59 = $(`<div id="html_903f2c4baa66073a567e8b285323ee59" style="width: 100.0%; height: 100.0%;">Älta IP</div>`)[0];
+                popup_89dfc47fa3c7b3e0e02a12a0b921cf66.setContent(html_903f2c4baa66073a567e8b285323ee59);
+            
+        
+
+        marker_7c249f5c263f9ea55328c2e888c59add.bindPopup(popup_89dfc47fa3c7b3e0e02a12a0b921cf66)
+        ;
+
+        
+    
+    
+                marker_7c249f5c263f9ea55328c2e888c59add.setIcon(icon_58eb3ff85e16cbf36cc59dd548ae2ce2);
+            
+    
+            var marker_d5cedbd6706f0f0000200d703c0d7c89 = L.marker(
+                [59.25427558695531, 18.20482608809121],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_10b520b1ed7a7605743530572932ec8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90bc42186a946a427c0b7277f317c4cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89ce48a2263a1cf49f8d89e6c581e9d0 = $(`<div id="html_89ce48a2263a1cf49f8d89e6c581e9d0" style="width: 100.0%; height: 100.0%;">Ältadalen</div>`)[0];
+                popup_90bc42186a946a427c0b7277f317c4cf.setContent(html_89ce48a2263a1cf49f8d89e6c581e9d0);
+            
+        
+
+        marker_d5cedbd6706f0f0000200d703c0d7c89.bindPopup(popup_90bc42186a946a427c0b7277f317c4cf)
+        ;
+
+        
+    
+    
+                marker_d5cedbd6706f0f0000200d703c0d7c89.setIcon(icon_10b520b1ed7a7605743530572932ec8a);
+            
+    
+            var marker_2cf2f9b86258c08ae85489e40b70df85 = L.marker(
+                [59.31067975710323, 18.113446030402873],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_0280779d40b2b4555f0eba75427c8ec6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50126f2d528ded3f70939efd30937d67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d09e2093050d9e572cf69ab0ed84f352 = $(`<div id="html_d09e2093050d9e572cf69ab0ed84f352" style="width: 100.0%; height: 100.0%;">Henriksdalsberget</div>`)[0];
+                popup_50126f2d528ded3f70939efd30937d67.setContent(html_d09e2093050d9e572cf69ab0ed84f352);
+            
+        
+
+        marker_2cf2f9b86258c08ae85489e40b70df85.bindPopup(popup_50126f2d528ded3f70939efd30937d67)
+        ;
+
+        
+    
+    
+                marker_2cf2f9b86258c08ae85489e40b70df85.setIcon(icon_0280779d40b2b4555f0eba75427c8ec6);
+            
+    
+            var marker_ceaa789e2718ddba905cf8015c9596ef = L.marker(
+                [59.30297118045249, 18.235175597339833],
+                {
+}
+            ).addTo(map_bcc76a2df7d4cc55d5562b3c70c05cf0);
+        
+    
+            var icon_7a1b5c1ca0a4af201f521f2c0c27853a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df5f537507f760e177ad70a55acde76e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2688d9f2958d9a2302e4406a2ae9b2d2 = $(`<div id="html_2688d9f2958d9a2302e4406a2ae9b2d2" style="width: 100.0%; height: 100.0%;">Tollare</div>`)[0];
+                popup_df5f537507f760e177ad70a55acde76e.setContent(html_2688d9f2958d9a2302e4406a2ae9b2d2);
+            
+        
+
+        marker_ceaa789e2718ddba905cf8015c9596ef.bindPopup(popup_df5f537507f760e177ad70a55acde76e)
+        ;
+
+        
+    
+    
+                marker_ceaa789e2718ddba905cf8015c9596ef.setIcon(icon_7a1b5c1ca0a4af201f521f2c0c27853a);
+            
+</script>
+</html>
+</div>
 
 <div class="section">
     <h2>Datasetinformation</h2>
